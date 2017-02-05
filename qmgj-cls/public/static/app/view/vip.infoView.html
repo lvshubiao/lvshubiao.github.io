@@ -1,0 +1,40 @@
+<div class="vip-info-box">
+	<form action="">
+		<div class="info-group userimg clearfix">
+			<legend>修改头像</legend>
+			<div class="info-item">
+				<div class="fileup"></div>
+				<input type="file" onchange="angular.element(this).scope().fileNameChanged(this)">
+			</div>
+		</div>
+
+		<div class="info-group clearfix">
+			<legend>用户昵称</legend>
+			<div class="info-item">
+				<input type="text">
+			</div>
+		</div>
+
+		<div class="info-group clearfix">
+			<legend>性别</legend>
+			<ul class="info-item clearfix">
+				<li class="info-radio" ng-click="radio($event)" data-value="1">男</li>
+				<li class="info-radio" ng-click="radio($event)" data-value="0">女</li>
+			</ul>
+		</div>
+
+		<div class="info-group clearfix">
+			<legend>关注的圈子</legend>
+			<ul class="info-item clearfix">
+				<li class="info-checkbox" data-value="{{$index+1}}" ng-click="checkbox($event)" ng-repeat="item in cipArr">{{item}}</li>
+			</ul>
+		</div>
+
+		<div class="info-group clearfix">
+			<legend>&nbsp;</legend>
+			<div class="info-item clearfix">
+				<div class="info-btn" ng-click="submit()">保存</div>
+			</div>
+		</div>
+	</form>
+</div>

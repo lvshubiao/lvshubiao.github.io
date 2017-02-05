@@ -1,0 +1,266 @@
+<html>
+
+<head>
+    <style type="text/css">
+    @charset "UTF-8";
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+    }
+    
+    ng\:form {
+        display: block;
+    }
+    
+    .ng-animate-shim {
+        visibility: hidden;
+    }
+    
+    .ng-anchor {
+        position: absolute;
+    }
+    </style>
+    <title>请登录</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../app.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-box fn-clear">
+            <ul class="fn-clear">
+                <li class="logoBox"><span class="cl1">全民</span><span class="cl2">共进</span></li>
+                <a ui-sref="home" ui-sref-active="active" class="active" href="#/home">
+                    <li class="nav">首页</li>
+                </a>
+                <a>
+                    <li class="nav">节目专栏</li>
+                </a>
+                <a>
+                    <li class="nav">圈子</li>
+                </a>
+                <li ng-controller="searchController" class="search ng-scope">
+                    <input placeholder="请输入查找内容" ng-keyup="myKeyUp($event)">
+                </li>
+            </ul>
+            <div class="loginBox"><a ui-sref="login" href="#/login">登录</a><a ui-sref="reg" href="#/reg">注册</a></div>
+        </div>
+    </header>
+    <!-- uiView: -->
+    <div ui-view="" class="ng-scope">
+        <!-- class规范 -->
+        <!-- p 代表业务页面 -->
+        <!-- g 代表多业务公用 -->
+        <div class="qmgj-p-home ng-scope">
+            <!-- 轮播图 -->
+            <div class="home-slide">
+                <!-- ng-show="$index==showIndex" -->
+                <!-- ngRepeat: item in slideData --><img ng-repeat="item in slideData" ng-style="{display:$index!=showIndex?'none':''}" ng-src="/images/slide/1.jpg" class="ng-scope" src="/images/slide/1.jpg" style="display: none;">
+                <!-- end ngRepeat: item in slideData --><img ng-repeat="item in slideData" ng-style="{display:$index!=showIndex?'none':''}" ng-src="/images/slide/2.png" class="ng-scope" src="/images/slide/2.png" style="">
+                <!-- end ngRepeat: item in slideData -->
+                <div class="slide-pointer">
+                    <!-- ngRepeat: obj in slideData --><span ng-repeat="obj in slideData" ng-class="{active: $index==showIndex}" ng-mouseenter="pauseSlide($index)" ng-mouseleave="playSlide()" class="ng-scope"></span>
+                    <!-- end ngRepeat: obj in slideData --><span ng-repeat="obj in slideData" ng-class="{active: $index==showIndex}" ng-mouseenter="pauseSlide($index)" ng-mouseleave="playSlide()" class="ng-scope active"></span>
+                    <!-- end ngRepeat: obj in slideData -->
+                </div>
+            </div>
+            <!-- 热门项目 -->
+            <div class="hot-box clearfix">
+                <!-- 左侧内容 -->
+                <section class="box-left">
+                    <!-- 左侧title -->
+                    <div class="left-title clearfix">
+                        <h1>热门项目</h1>
+                        <a ui-sref="list" href="#/list">查看更多</a>
+                    </div>
+                    <!-- 左侧主体 -->
+                    <div class="box-content clearfix">
+                        <img class="hot-img" alt="" ng-src="/images/proj/20151215094703.jpg" src="/images/proj/20151215094703.jpg">
+                        <div class="hot-info">
+                            <h1 class="ng-binding">史上最高颜值天团等你来加油</h1>
+                            <h3 class="hot-h3 ng-binding">by 人人娱乐</h3>
+                            <p class="hot-p ng-binding">超模明星足球队授权电影制作公司</p>
+                            <div><span class="qmgj-g-sprite sprite-mark ng-binding">微电影</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                            <!-- 进度条 -->
+                            <div class="process-box">
+                                <div class="process" style="width: 90%"></div>
+                            </div>
+                            <!-- 信息 -->
+                            <ul class="info-box clearfix">
+                                <li>
+                                    <h1 class="ng-binding">90%</h1>
+                                    <p>进度</p>
+                                </li>
+                                <li>
+                                    <h1 class="ng-binding">￥4,540.00</h1>
+                                    <p>支持金额</p>
+                                </li>
+                                <li>
+                                    <h1 class="ng-binding">4540</h1>
+                                    <p>支持者</p>
+                                </li>
+                                <li>
+                                    <h1 class="ng-binding">0</h1>
+                                    <p>剩余天数</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- 右侧导航 -->
+                <ul class="box-right">
+                    <!-- ngRepeat: item in hotData -->
+                    <li ng-repeat="item in hotData" ng-class="{active: hotIndex == $index}" ng-click="showHotItem($index)" class="ng-binding ng-scope active">微电影</li>
+                    <!-- end ngRepeat: item in hotData -->
+                    <li ng-repeat="item in hotData" ng-class="{active: hotIndex == $index}" ng-click="showHotItem($index)" class="ng-binding ng-scope">话剧</li>
+                    <!-- end ngRepeat: item in hotData -->
+                    <li ng-repeat="item in hotData" ng-class="{active: hotIndex == $index}" ng-click="showHotItem($index)" class="ng-binding ng-scope">电影</li>
+                    <!-- end ngRepeat: item in hotData -->
+                </ul>
+            </div>
+            <!-- 卫视主推 -->
+            <div class="tv-box">
+                <div class="tv-title">
+                    <h1>卫视主推</h1>
+                    <a ui-sref="list" href="#/list">查看全部</a>
+                </div>
+                <ul class="tv-content clearfix">
+                    <!-- ngRepeat: item in tvData -->
+                    <li ng-repeat="item in tvData" class="ng-scope">
+                        <div class="tv-item">
+                            <img ng-src="/images/proj/20151215094703.jpg" alt="" src="/images/proj/20151215094703.jpg">
+                            <div class="tv-info">
+                                <h1 class="ng-binding">史上最高颜值天团等你来加油</h1>
+                                <h3 class="hot-h3 ng-binding">by 人人娱乐</h3>
+                                <p class="hot-p ng-binding">超模明星足球队授权电影制作公司...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">微电影</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 90%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">90%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥4,540.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">0</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in tvData -->
+                    <li ng-repeat="item in tvData" class="ng-scope">
+                        <div class="tv-item">
+                            <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                            <div class="tv-info">
+                                <h1 class="ng-binding">触电来袭：互动演出鬼吹灯</h1>
+                                <h3 class="hot-h3 ng-binding">by 万娱引力</h3>
+                                <p class="hot-p ng-binding">“触电之鬼吹灯”即将首演，全国独此一家。摸金校尉胡八一、王凯旋请你务必记得这个仅属于我们之...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">话剧</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 7%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">7%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥3,568.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">0</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in tvData -->
+                    <li ng-repeat="item in tvData" class="ng-scope">
+                        <div class="tv-item">
+                            <img ng-src="/images/proj/20151211104100.jpg" alt="" src="/images/proj/20151211104100.jpg">
+                            <div class="tv-info">
+                                <h1 class="ng-binding">《未来十年》电影众筹</h1>
+                                <h3 class="hot-h3 ng-binding">by 上海传媒</h3>
+                                <p class="hot-p ng-binding">未来十年，“大数据”成为人类生活的“底层平台”，衣食住行和社交都离不开“大数据”的支持和“...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">电影</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 3%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">3%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥1,244,160.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">0</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in tvData -->
+                </ul>
+            </div>
+            <!-- 合作单位 -->
+            <div class="unit-box">
+                <h1>合作单位</h1>
+                <ul class="clearfix">
+                    <!-- ngRepeat: item in unitData -->
+                    <li ng-repeat="item in unitData" class="ng-scope">
+                        <a ng-href="http://v.qq.com/" href="http://v.qq.com/"><img ng-src="/images/proj/anhuitv.jpg" alt="" src="/images/proj/anhuitv.jpg"></a>
+                    </li>
+                    <!-- end ngRepeat: item in unitData -->
+                    <li ng-repeat="item in unitData" class="ng-scope">
+                        <a ng-href="www.youku.com" href="www.youku.com"><img ng-src="/images/proj/youku.jpg" alt="" src="/images/proj/youku.jpg"></a>
+                    </li>
+                    <!-- end ngRepeat: item in unitData -->
+                    <li ng-repeat="item in unitData" class="ng-scope">
+                        <a ng-href="http://www.ahtv.cn/" href="http://www.ahtv.cn/"><img ng-src="/images/proj/anhuitv.jpg" alt="" src="/images/proj/anhuitv.jpg"></a>
+                    </li>
+                    <!-- end ngRepeat: item in unitData -->
+                    <li ng-repeat="item in unitData" class="ng-scope">
+                        <a ng-href="http://bank.pingan.com/" href="http://bank.pingan.com/"><img ng-src="/images/proj/pingan.jpg" alt="" src="/images/proj/pingan.jpg"></a>
+                    </li>
+                    <!-- end ngRepeat: item in unitData -->
+                    <li ng-repeat="item in unitData" class="ng-scope">
+                        <a ng-href="http://www.ixingmei.com/" href="http://www.ixingmei.com/"><img ng-src="/images/proj/anhuitv.jpg" alt="" src="/images/proj/anhuitv.jpg"></a>
+                    </li>
+                    <!-- end ngRepeat: item in unitData -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="navList clearfix">
+            <div class="navleft"><span>关于全民共进</span><span>|</span><span>全民共进用户协议</span><span>|</span><span>全民共进风险提示</span><span>|</span><span>联系我们</span></div>
+            <div class="navright"><span class="navcl1">全民</span><span class="navcl2">共进</span><span> ©2015</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

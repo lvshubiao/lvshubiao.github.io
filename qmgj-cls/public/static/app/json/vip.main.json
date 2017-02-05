@@ -1,0 +1,64 @@
+{
+    "resultCode": "0000",
+    "result": {
+    "procare":[{
+        "img": "static/app/images/infoimg.jpg",
+        "name": "《犹太人在上海》",
+        "fname": "中国星",
+        "sp": "56",
+        "rprice": "123456"
+    }, {
+        "img": "static/app/images/infoimg.jpg",
+        "name": "《犹太人在上海》",
+        "fname": "中国星",
+        "sp": "56",
+        "rprice": "123456"
+    }, {
+        "img": "static/app/images/infoimg.jpg",
+        "name": "《犹太人在上海》",
+        "fname": "中国星",
+        "sp": "56",
+        "rprice": "123456"
+    }, {
+        "img": "static/app/images/infoimg.jpg",
+        "name": "《犹太人在上海》",
+        "fname": "中国星",
+        "sp": "56",
+        "rprice": "123456"
+    }],
+    "prohot":[
+        {
+            "img": "static/app/images/tvlist.jpg",
+            "name":"《犹太人在上海》",
+            "desc":"犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海",
+            "sp":"45",
+            "rprice":"1232443",
+            "rday":"23"
+        },
+         {
+            "img": "static/app/images/tvlist.jpg",
+            "name":"《犹太人在上海》",
+            "desc":"犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海",
+            "sp":"45",
+            "rprice":"1232443",
+            "rday":"23"
+        },
+         {
+            "img": "static/app/images/tvlist.jpg",
+            "name":"《犹太人在上海》",
+            "desc":"犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海",
+            "sp":"45",
+            "rprice":"1232443",
+            "rday":"23"
+        },{
+            "img": "static/app/images/tvlist.jpg",
+            "name":"《犹太人在上海》",
+            "desc":"犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海",
+            "sp":"45",
+            "rprice":"1232443",
+            "rday":"23"
+        }
+    ]
+    },
+    "resultMsg": ""
+}

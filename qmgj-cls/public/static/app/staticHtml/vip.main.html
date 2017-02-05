@@ -1,0 +1,288 @@
+<html>
+
+<head>
+    <style type="text/css">
+    @charset "UTF-8";
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+    }
+    
+    ng\:form {
+        display: block;
+    }
+    
+    .ng-animate-shim {
+        visibility: hidden;
+    }
+    
+    .ng-anchor {
+        position: absolute;
+    }
+    </style>
+    <title>全民共进</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../app.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-box fn-clear">
+            <ul class="fn-clear">
+                <li class="logoBox"><span class="cl1">全民</span><span class="cl2">共进</span></li>
+                <a ui-sref="home" ui-sref-active="active" class="" href="#/home">
+                    <li class="nav">首页</li>
+                </a>
+                <a>
+                    <li class="nav">节目专栏</li>
+                </a>
+                <a>
+                    <li class="nav">圈子</li>
+                </a>
+                <li ng-controller="searchController" class="search ng-scope">
+                    <input placeholder="请输入查找内容" ng-keyup="myKeyUp($event)">
+                </li>
+            </ul>
+            <div ng-controller="logoutController" class="loginBox ng-scope"><a ui-sref="vip.main" href="#/vip/main">劳斯莱斯</a><a ng-click="userLogout()">退出</a></div>
+        </div>
+    </header>
+    <!-- uiView: -->
+    <div ui-view="" class="ng-scope">
+        <div class="qmgj-p-vip ng-scope">
+            <!-- 头像区 -->
+            <section class="user-box">
+                <div class="user-group clearfix">
+                    <!-- 头像 -->
+                    <div class="img-item">
+                        <img alt="" ng-src="static/app/images/userhead.png" src="static/app/images/userhead.png">
+                        <div class="sprite-box">
+                            <span class="sprite-phone"></span>
+                            <span class="sprite-msg"></span>
+                            <span class="sprite-img"></span>
+                        </div>
+                    </div>
+                    <!-- 信息 -->
+                    <div class="info-item">
+                        <h1 class="ng-binding">全民共进<span class="ng-binding">下午好！</span></h1>
+                        <div class="clearfix safe-box">
+                            <div class="safe-box1">账户安全等级：</div>
+                            <div class="safe-box2">
+                                <div style="width:100%"></div>
+                            </div>
+                            <div class="safe-box3 ng-binding">高</div>
+                        </div>
+                        <p class="ng-binding">上次登录时间：2016-10-26 16:57:58</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 个人信息展示 -->
+            <section class="user-section clearfix">
+                <!-- 左侧导航 -->
+                <div class="user-nav">
+                    <ul>
+                        <li><a ui-sref="vip.main" ui-sref-active="active" href="#/vip/main" class="active">个人主页</a></li>
+                        <li><a ui-sref="vip.info" ui-sref-active="active" class="" href="#/vip/info">个人信息</a></li>
+                        <li><a>安全设置</a></li>
+                        <li><a>关注的圈子</a></li>
+                        <li><a ui-sref="vip.record" ui-sref-active="active" class="" href="#/vip/record">购买记录</a></li>
+                    </ul>
+                </div>
+                <!-- 右侧显示  嵌套视图-->
+                <!-- uiView: -->
+                <div ui-view="" class="user-right-section ng-scope">
+                    <div class="vip-main-box ng-scope">
+                        <h1 class="main-title">我关注的项目</h1>
+                        <div class="main-line"></div>
+                        <section class="main-body clearfix">
+                            <!-- ngRepeat: item in procare -->
+                            <div ng-repeat="item in procare" class="main-item ng-scope">
+                                <div class="item-box clearfix">
+                                    <img ng-src="static/app/images/infoimg.jpg" alt="" src="static/app/images/infoimg.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在上海》</h1>
+                                        <h2 class="ng-binding">by 中国星</h2>
+                                        <div class="item-process">
+                                            <div style="width: 56%"></div>
+                                        </div>
+                                        <div>已筹资：<span class="font-blod ng-binding">￥12,345.00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in procare -->
+                            <div ng-repeat="item in procare" class="main-item ng-scope">
+                                <div class="item-box clearfix">
+                                    <img ng-src="static/app/images/infoimg.jpg" alt="" src="static/app/images/infoimg.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在北京》</h1>
+                                        <h2 class="ng-binding">by 中国星</h2>
+                                        <div class="item-process">
+                                            <div style="width: 56%"></div>
+                                        </div>
+                                        <div>已筹资：<span class="font-blod ng-binding">￥12,345.00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in procare -->
+                            <div ng-repeat="item in procare" class="main-item ng-scope">
+                                <div class="item-box clearfix">
+                                    <img ng-src="static/app/images/infoimg.jpg" alt="" src="static/app/images/infoimg.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在河南》</h1>
+                                        <h2 class="ng-binding">by 中国星</h2>
+                                        <div class="item-process">
+                                            <div style="width: 56%"></div>
+                                        </div>
+                                        <div>已筹资：<span class="font-blod ng-binding">￥12,345.00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in procare -->
+                            <div ng-repeat="item in procare" class="main-item ng-scope">
+                                <div class="item-box clearfix">
+                                    <img ng-src="static/app/images/infoimg.jpg" alt="" src="static/app/images/infoimg.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在郑州》</h1>
+                                        <h2 class="ng-binding">by 中国星</h2>
+                                        <div class="item-process">
+                                            <div style="width: 56%"></div>
+                                        </div>
+                                        <div>已筹资：<span class="font-blod ng-binding">￥12,345.00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in procare -->
+                        </section>
+                    </div>
+                    <div class="vip-main-box ng-scope">
+                        <h1 class="main-title">当前最热</h1>
+                        <div class="main-line"></div>
+                        <section class="main-hot-body clearfix">
+                            <!-- ngRepeat: item in prohot -->
+                            <div class="item-box ng-scope" ng-repeat="item in prohot">
+                                <div class="item-group">
+                                    <img ng-src="static/app/images/tvlist.jpg" alt="" src="static/app/images/tvlist.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在上海》</h1>
+                                        <div class="item-desc ng-binding">犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海...</div>
+                                        <div class="item-sp">
+                                            <div class="item-sp2" style="width:45%"></div>
+                                        </div>
+                                        <ul class="clearfix">
+                                            <li>
+                                                <h1 class="ng-binding">45%</h1>
+                                                <p>进度</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">￥2,345,767</h1>
+                                                <p>支持金额</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">234</h1>
+                                                <p>剩余天数</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in prohot -->
+                            <div class="item-box ng-scope" ng-repeat="item in prohot">
+                                <div class="item-group">
+                                    <img ng-src="static/app/images/tvlist.jpg" alt="" src="static/app/images/tvlist.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在上海》</h1>
+                                        <div class="item-desc ng-binding">犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海...</div>
+                                        <div class="item-sp">
+                                            <div class="item-sp2" style="width:45%"></div>
+                                        </div>
+                                        <ul class="clearfix">
+                                            <li>
+                                                <h1 class="ng-binding">45%</h1>
+                                                <p>进度</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">￥2,345,767</h1>
+                                                <p>支持金额</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">234</h1>
+                                                <p>剩余天数</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in prohot -->
+                            <div class="item-box ng-scope" ng-repeat="item in prohot">
+                                <div class="item-group">
+                                    <img ng-src="static/app/images/tvlist.jpg" alt="" src="static/app/images/tvlist.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在上海》</h1>
+                                        <div class="item-desc ng-binding">犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海...</div>
+                                        <div class="item-sp">
+                                            <div class="item-sp2" style="width:45%"></div>
+                                        </div>
+                                        <ul class="clearfix">
+                                            <li>
+                                                <h1 class="ng-binding">45%</h1>
+                                                <p>进度</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">￥2,345,767</h1>
+                                                <p>支持金额</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">234</h1>
+                                                <p>剩余天数</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in prohot -->
+                            <div class="item-box ng-scope" ng-repeat="item in prohot">
+                                <div class="item-group">
+                                    <img ng-src="static/app/images/tvlist.jpg" alt="" src="static/app/images/tvlist.jpg">
+                                    <div class="item-info">
+                                        <h1 class="ng-binding">《犹太人在上海》</h1>
+                                        <div class="item-desc ng-binding">犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海犹太人在上海...</div>
+                                        <div class="item-sp">
+                                            <div class="item-sp2" style="width:45%"></div>
+                                        </div>
+                                        <ul class="clearfix">
+                                            <li>
+                                                <h1 class="ng-binding">45%</h1>
+                                                <p>进度</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">￥2,345,767</h1>
+                                                <p>支持金额</p>
+                                            </li>
+                                            <li>
+                                                <h1 class="ng-binding">234</h1>
+                                                <p>剩余天数</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ngRepeat: item in prohot -->
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="navList clearfix">
+            <div class="navleft"><span>关于全民共进</span><span>|</span><span>全民共进用户协议</span><span>|</span><span>全民共进风险提示</span><span>|</span><span>联系我们</span></div>
+            <div class="navright"><span class="navcl1">全民</span><span class="navcl2">共进</span><span> ©2015</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

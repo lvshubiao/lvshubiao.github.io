@@ -1,0 +1,388 @@
+<html>
+
+<head>
+    <style type="text/css">
+    @charset "UTF-8";
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+    }
+    
+    ng\:form {
+        display: block;
+    }
+    
+    .ng-animate-shim {
+        visibility: hidden;
+    }
+    
+    .ng-anchor {
+        position: absolute;
+    }
+    </style>
+    <title>请登录</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../app.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-box fn-clear">
+            <ul class="fn-clear">
+                <li class="logoBox"><span class="cl1">全民</span><span class="cl2">共进</span></li>
+                <a ui-sref="home" ui-sref-active="active" class="" href="#/home">
+                    <li class="nav">首页</li>
+                </a>
+                <a>
+                    <li class="nav">节目专栏</li>
+                </a>
+                <a>
+                    <li class="nav">圈子</li>
+                </a>
+                <li ng-controller="searchController" class="search ng-scope">
+                    <input placeholder="请输入查找内容" ng-keyup="myKeyUp($event)">
+                </li>
+            </ul>
+            <div class="loginBox"><a ui-sref="login" href="#/login">登录</a><a ui-sref="reg" href="#/reg">注册</a></div>
+        </div>
+    </header>
+    <!-- uiView: -->
+    <div ui-view="" class="ng-scope">
+        <div class="qmgj-p-list ng-scope">
+            <!-- 筛选区 -->
+            <div class="filter-box">
+                <div class="filter-group">
+                    <div class="filter-item">
+                        <!-- ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope active">全部</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">微电影</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">电视剧</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">话剧</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">电影</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">戏曲</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">书画</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">相声</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">戏剧</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">音乐剧</span>
+                        <!-- end ngRepeat: obj in arr --><span ng-repeat="obj in arr" ng-class="{active:cid == $index}" ng-click="changeType($index)" class="ng-binding ng-scope">其它</span>
+                        <!-- end ngRepeat: obj in arr -->
+                    </div>
+                    <div class="filter-item">
+                        <!-- ngRepeat: o in ['筹资中','已结束','成功'] --><span ng-repeat="o in ['筹资中','已结束','成功']" ng-class="{active: status == $index}" ng-click="changeStatus($index)" class="ng-binding ng-scope active">筹资中</span>
+                        <!-- end ngRepeat: o in ['筹资中','已结束','成功'] --><span ng-repeat="o in ['筹资中','已结束','成功']" ng-class="{active: status == $index}" ng-click="changeStatus($index)" class="ng-binding ng-scope">已结束</span>
+                        <!-- end ngRepeat: o in ['筹资中','已结束','成功'] --><span ng-repeat="o in ['筹资中','已结束','成功']" ng-class="{active: status == $index}" ng-click="changeStatus($index)" class="ng-binding ng-scope">成功</span>
+                        <!-- end ngRepeat: o in ['筹资中','已结束','成功'] -->
+                    </div>
+                    <div class="filter-item">
+                        <!-- ngRepeat: k in ['最新','热门','结束时间'] --><span ng-repeat="k in ['最新','热门','结束时间']" ng-class="{active: timeStatus == $index}" ng-click="checkTimeStatus($index)" class="ng-binding ng-scope active">最新</span>
+                        <!-- end ngRepeat: k in ['最新','热门','结束时间'] --><span ng-repeat="k in ['最新','热门','结束时间']" ng-class="{active: timeStatus == $index}" ng-click="checkTimeStatus($index)" class="ng-binding ng-scope">热门</span>
+                        <!-- end ngRepeat: k in ['最新','热门','结束时间'] --><span ng-repeat="k in ['最新','热门','结束时间']" ng-class="{active: timeStatus == $index}" ng-click="checkTimeStatus($index)" class="ng-binding ng-scope">结束时间</span>
+                        <!-- end ngRepeat: k in ['最新','热门','结束时间'] -->
+                    </div>
+                </div>
+            </div>
+            <!-- 展示区 -->
+            <div class="show-box">
+                <!-- 展示内容 -->
+                <ul class="tvList clearfix">
+                    <!-- ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">《我不是潘金莲》</h1>
+                                <h3 class="hot-h3 ng-binding">by 上海传媒</h3>
+                                <p class="hot-p ng-binding">专家座谈，并与中共中央对外联络部的有关...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">电影</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 56%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">56%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥39,325.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">32</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151211104100.jpg" alt="" src="/images/proj/20151211104100.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">触电来袭：互动演出鬼吹灯</h1>
+                                <h3 class="hot-h3 ng-binding">by 万娱引力</h3>
+                                <p class="hot-p ng-binding">高官会面，并与韩国媒体特派记者们座谈。这...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">相声</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 22%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">22%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥634,654.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">53</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">《犹太人在郑州》</h1>
+                                <h3 class="hot-h3 ng-binding">by 人人娱乐</h3>
+                                <p class="hot-p ng-binding">中央对外联络部的有关人士会面。6日，代表团将与韩国驻华大使金章洙和中国全国人大外事委员会主任委员傅莹等高官会面...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">书画</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 49%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">49%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥331,531.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">79</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">《未来十年》电影众筹</h1>
+                                <h3 class="hot-h3 ng-binding">by 冯小刚</h3>
+                                <p class="hot-p ng-binding">傅莹等高官会面，并与韩国媒体特派记者们座谈。这并非共同民主党议员第一次因“萨德”问题访华。去年8月，6名反对“...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">戏剧</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 74%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">74%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥562,249.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">60</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151211104100.jpg" alt="" src="/images/proj/20151211104100.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">《我不是潘金莲》</h1>
+                                <h3 class="hot-h3 ng-binding">by 上海传媒</h3>
+                                <p class="hot-p ng-binding">...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">音乐剧</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 93%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">93%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥320,998.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">47</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151211104100.jpg" alt="" src="/images/proj/20151211104100.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">中国的奥斯卡</h1>
+                                <h3 class="hot-h3 ng-binding">by 冯小刚</h3>
+                                <p class="hot-p ng-binding">文化研究所与专家座谈，并与中共中央对外联络部的有关人士会...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">相声</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 27%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">27%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥446,028.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">13</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151215094703.jpg" alt="" src="/images/proj/20151215094703.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">触电来袭：互动演出鬼吹灯</h1>
+                                <h3 class="hot-h3 ng-binding">by 万娱引力</h3>
+                                <p class="hot-p ng-binding">关人士会面。6日，代表团将与韩国驻华大使金章洙和中国全国人大外事委员会主任委员傅莹等高官会面，并与韩国媒体特派...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">戏剧</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 24%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">24%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥817,626.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">77</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151211104100.jpg" alt="" src="/images/proj/20151211104100.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">中国的奥斯卡</h1>
+                                <h3 class="hot-h3 ng-binding">by 冯小刚</h3>
+                                <p class="hot-p ng-binding">中国国际文化研究所与专家座谈，并与中共中央对外联络部的有关人...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">话剧</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 57%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">57%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥46,577.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">57</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                    <li ng-repeat="item in listData" class="ng-scope">
+                        <div class="info-item">
+                            <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                            <div class="info-content">
+                                <h1 class="ng-binding">《老炮》规矩</h1>
+                                <h3 class="hot-h3 ng-binding">by 人人娱乐</h3>
+                                <p class="hot-p ng-binding">座谈，并与中共中央对外联络部的有关人士会面。6日，代表团将与韩国驻华大使...</p>
+                                <div><span class="qmgj-g-sprite sprite-mark ng-binding">电影</span><span class="qmgj-g-sprite sprite-tv">卫视推荐</span></div>
+                                <!-- 进度条 -->
+                                <div class="process-box">
+                                    <div class="process" style="width: 5%"></div>
+                                </div>
+                                <!-- 信息 -->
+                                <ul class="info-box clearfix">
+                                    <li>
+                                        <h1 class="ng-binding">5%</h1>
+                                        <p>进度</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">￥231,144.00</h1>
+                                        <p>支持金额</p>
+                                    </li>
+                                    <li>
+                                        <h1 class="ng-binding">81</h1>
+                                        <p>剩余天数</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end ngRepeat: item in listData -->
+                </ul>
+                <!-- 翻页区 -->
+                <section class="page-group">
+                    <ul uib-pagination="" items-per-page="count" total-items="countAll" ng-model="page" max-size="maxSize" boundary-links="true" ng-change="pageChanged()" class="ng-pristine ng-untouched ng-valid ng-not-empty"></ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="navList clearfix">
+            <div class="navleft"><span>关于全民共进</span><span>|</span><span>全民共进用户协议</span><span>|</span><span>全民共进风险提示</span><span>|</span><span>联系我们</span></div>
+            <div class="navright"><span class="navcl1">全民</span><span class="navcl2">共进</span><span> ©2015</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

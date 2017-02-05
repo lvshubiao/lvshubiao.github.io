@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <style type="text/css">
+    @charset "UTF-8";
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+    }
+    
+    ng\:form {
+        display: block;
+    }
+    
+    .ng-animate-shim {
+        visibility: hidden;
+    }
+    
+    .ng-anchor {
+        position: absolute;
+    }
+    </style>
+    <title>全民共进</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../app.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-box fn-clear">
+            <ul class="fn-clear">
+                <li class="logoBox"><span class="cl1">全民</span><span class="cl2">共进</span></li>
+                <a ui-sref="home" ui-sref-active="active" class="" href="#/home">
+                    <li class="nav">首页</li>
+                </a>
+                <a>
+                    <li class="nav">节目专栏</li>
+                </a>
+                <a>
+                    <li class="nav">圈子</li>
+                </a>
+                <li ng-controller="searchController" class="search ng-scope">
+                    <input placeholder="请输入查找内容" ng-keyup="myKeyUp($event)">
+                </li>
+            </ul>
+            <div ng-controller="logoutController" class="loginBox ng-scope"><a ui-sref="vip.main" href="#/vip/main">劳斯莱斯</a><a ng-click="userLogout()">退出</a></div>
+        </div>
+    </header>
+    <!-- uiView: -->
+    <div ui-view="" class="ng-scope">
+        <div class="qmgj-p-vip ng-scope">
+            <!-- 头像区 -->
+            <section class="user-box">
+                <div class="user-group clearfix">
+                    <!-- 头像 -->
+                    <div class="img-item">
+                        <img alt="" ng-src="static/app/images/userhead.png" src="static/app/images/userhead.png">
+                        <div class="sprite-box">
+                            <span class="sprite-phone"></span>
+                            <span class="sprite-msg"></span>
+                            <span class="sprite-img"></span>
+                        </div>
+                    </div>
+                    <!-- 信息 -->
+                    <div class="info-item">
+                        <h1 class="ng-binding">全民共进<span class="ng-binding">下午好！</span></h1>
+                        <div class="clearfix safe-box">
+                            <div class="safe-box1">账户安全等级：</div>
+                            <div class="safe-box2">
+                                <div style="width:100%"></div>
+                            </div>
+                            <div class="safe-box3 ng-binding">高</div>
+                        </div>
+                        <p class="ng-binding">上次登录时间：2016-10-26 16:57:58</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 个人信息展示 -->
+            <section class="user-section clearfix">
+                <!-- 左侧导航 -->
+                <div class="user-nav">
+                    <ul>
+                        <li><a ui-sref="vip.main" ui-sref-active="active" class="" href="#/vip/main">个人主页</a></li>
+                        <li><a ui-sref="vip.info" ui-sref-active="active" href="#/vip/info" class="active">个人信息</a></li>
+                        <li><a>安全设置</a></li>
+                        <li><a>关注的圈子</a></li>
+                        <li><a ui-sref="vip.record" ui-sref-active="active" class="" href="#/vip/record">购买记录</a></li>
+                    </ul>
+                </div>
+                <!-- 右侧显示  嵌套视图-->
+                <!-- uiView: -->
+                <div ui-view="" class="user-right-section ng-scope">
+                    <div class="vip-info-box ng-scope">
+                        <form action="" class="ng-pristine ng-valid">
+                            <div class="info-group userimg clearfix">
+                                <legend>修改头像</legend>
+                                <div class="info-item">
+                                    <div class="fileup"></div>
+                                    <input type="file" onchange="angular.element(this).scope().fileNameChanged(this)">
+                                </div>
+                            </div>
+                            <div class="info-group clearfix">
+                                <legend>用户昵称</legend>
+                                <div class="info-item">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="info-group clearfix">
+                                <legend>性别</legend>
+                                <ul class="info-item clearfix">
+                                    <li class="info-radio" data-value="1" ng-click="radio($event)">男</li>
+                                    <li class="info-radio active" data-value="0" ng-click="radio($event)">女</li>
+                                </ul>
+                            </div>
+                            <div class="info-group clearfix">
+                                <legend>关注的圈子</legend>
+                                <ul class="info-item clearfix">
+                                    <!-- ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="1" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">微电影</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="2" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">电视剧</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="3" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">话剧</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="4" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">电影</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="5" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">戏曲</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="6" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">书画</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="7" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">相声</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="8" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">戏剧</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                    <li ng-repeat="item in cipArr" data-value="9" class="info-checkbox ng-binding ng-scope" ng-click="checkbox($event)">音乐剧</li>
+                                    <!-- end ngRepeat: item in cipArr -->
+                                </ul>
+                            </div>
+                            <div class="info-group clearfix">
+                                <legend>&nbsp;</legend>
+                                <div class="info-item clearfix">
+                                    <div class="info-btn" ng-click="submit()">保存</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="navList clearfix">
+            <div class="navleft"><span>关于全民共进</span><span>|</span><span>全民共进用户协议</span><span>|</span><span>全民共进风险提示</span><span>|</span><span>联系我们</span></div>
+            <div class="navright"><span class="navcl1">全民</span><span class="navcl2">共进</span><span> ©2015</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

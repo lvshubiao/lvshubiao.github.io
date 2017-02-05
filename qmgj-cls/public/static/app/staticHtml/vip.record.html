@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <style type="text/css">
+    @charset "UTF-8";
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+    }
+    
+    ng\:form {
+        display: block;
+    }
+    
+    .ng-animate-shim {
+        visibility: hidden;
+    }
+    
+    .ng-anchor {
+        position: absolute;
+    }
+    </style>
+    <title>全民共进</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../app.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-box fn-clear">
+            <ul class="fn-clear">
+                <li class="logoBox"><span class="cl1">全民</span><span class="cl2">共进</span></li>
+                <a ui-sref="home" ui-sref-active="active" class="" href="#/home">
+                    <li class="nav">首页</li>
+                </a>
+                <a>
+                    <li class="nav">节目专栏</li>
+                </a>
+                <a>
+                    <li class="nav">圈子</li>
+                </a>
+                <li ng-controller="searchController" class="search ng-scope">
+                    <input placeholder="请输入查找内容" ng-keyup="myKeyUp($event)">
+                </li>
+            </ul>
+            <div ng-controller="logoutController" class="loginBox ng-scope"><a ui-sref="vip.main" href="#/vip/main">劳斯莱斯</a><a ng-click="userLogout()">退出</a></div>
+        </div>
+    </header>
+    <!-- uiView: -->
+    <div ui-view="" class="ng-scope">
+        <div class="qmgj-p-vip ng-scope">
+            <!-- 头像区 -->
+            <section class="user-box">
+                <div class="user-group clearfix">
+                    <!-- 头像 -->
+                    <div class="img-item">
+                        <img alt="" ng-src="static/app/images/userhead.png" src="static/app/images/userhead.png">
+                        <div class="sprite-box">
+                            <span class="sprite-phone"></span>
+                            <span class="sprite-msg"></span>
+                            <span class="sprite-img"></span>
+                        </div>
+                    </div>
+                    <!-- 信息 -->
+                    <div class="info-item">
+                        <h1 class="ng-binding">全民共进<span class="ng-binding">下午好！</span></h1>
+                        <div class="clearfix safe-box">
+                            <div class="safe-box1">账户安全等级：</div>
+                            <div class="safe-box2">
+                                <div style="width:100%"></div>
+                            </div>
+                            <div class="safe-box3 ng-binding">高</div>
+                        </div>
+                        <p class="ng-binding">上次登录时间：2016-10-26 16:57:58</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 个人信息展示 -->
+            <section class="user-section clearfix">
+                <!-- 左侧导航 -->
+                <div class="user-nav">
+                    <ul>
+                        <li><a ui-sref="vip.main" ui-sref-active="active" class="" href="#/vip/main">个人主页</a></li>
+                        <li><a ui-sref="vip.info" ui-sref-active="active" class="" href="#/vip/info">个人信息</a></li>
+                        <li><a>安全设置</a></li>
+                        <li><a>关注的圈子</a></li>
+                        <li><a ui-sref="vip.record" ui-sref-active="active" href="#/vip/record" class="active">购买记录</a></li>
+                    </ul>
+                </div>
+                <!-- 右侧显示  嵌套视图-->
+                <!-- uiView: -->
+                <div ui-view="" class="user-right-section ng-scope">
+                    <div class="vip-p-record ng-scope">
+                        <ul class="record-nav clearfix">
+                            <!-- ngRepeat: tn in ['全部','未支付','已支付'] -->
+                            <li ng-class="{active: type == $index}" ng-repeat="tn in ['全部','未支付','已支付']" ng-click="changeType($index)" class="ng-binding ng-scope active">全部</li>
+                            <!-- end ngRepeat: tn in ['全部','未支付','已支付'] -->
+                            <li ng-class="{active: type == $index}" ng-repeat="tn in ['全部','未支付','已支付']" ng-click="changeType($index)" class="ng-binding ng-scope">未支付</li>
+                            <!-- end ngRepeat: tn in ['全部','未支付','已支付'] -->
+                            <li ng-class="{active: type == $index}" ng-repeat="tn in ['全部','未支付','已支付']" ng-click="changeType($index)" class="ng-binding ng-scope">已支付</li>
+                            <!-- end ngRepeat: tn in ['全部','未支付','已支付'] -->
+                        </ul>
+                        <div class="record-content">
+                            <ul class="content-header clearfix">
+                                <li class="li1 pl50">项目信息</li>
+                                <li class="li2">实付款(元)</li>
+                                <li class="li3">交易状态</li>
+                                <li class="li4">操作</li>
+                            </ul>
+                            <div class="content-box">
+                                <!-- ngRepeat: item in recordData -->
+                                <ul ng-repeat="item in recordData" class="content-item clearfix ng-scope">
+                                    <li class="li1 clearfix">
+                                        <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                                        <div class="item-info">
+                                            <h1 class="ng-binding">史上最高颜值天团等你来加油</h1>
+                                            <h3 class="ng-binding">by 人人娱乐</h3>
+                                            <p class="ng-binding">订单号：6</p>
+                                        </div>
+                                    </li>
+                                    <li class="li2 ng-binding">￥679,240.00</li>
+                                    <li class="li3 ng-binding">未支付</li>
+                                    <li class="li4 pay" ng-class="{pay: item.status==0}">
+                                        <div class="pay-btn">立即支付</div>
+                                        <a href="#">交易详情</a>
+                                        <a href="#">删除</a>
+                                    </li>
+                                </ul>
+                                <!-- end ngRepeat: item in recordData -->
+                                <ul ng-repeat="item in recordData" class="content-item clearfix ng-scope">
+                                    <li class="li1 clearfix">
+                                        <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                                        <div class="item-info">
+                                            <h1 class="ng-binding">史上最高颜值天团等你来加油</h1>
+                                            <h3 class="ng-binding">by 人人娱乐</h3>
+                                            <p class="ng-binding">订单号：6</p>
+                                        </div>
+                                    </li>
+                                    <li class="li2 ng-binding">￥670,985.00</li>
+                                    <li class="li3 ng-binding">已支付</li>
+                                    <li class="li4" ng-class="{pay: item.status==0}">
+                                        <div class="pay-btn">立即支付</div>
+                                        <a href="#">交易详情</a>
+                                        <a href="#">删除</a>
+                                    </li>
+                                </ul>
+                                <!-- end ngRepeat: item in recordData -->
+                                <ul ng-repeat="item in recordData" class="content-item clearfix ng-scope">
+                                    <li class="li1 clearfix">
+                                        <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                                        <div class="item-info">
+                                            <h1 class="ng-binding">《犹太人在郑州》</h1>
+                                            <h3 class="ng-binding">by 万万没想到</h3>
+                                            <p class="ng-binding">订单号：6</p>
+                                        </div>
+                                    </li>
+                                    <li class="li2 ng-binding">￥439,770.00</li>
+                                    <li class="li3 ng-binding">未支付</li>
+                                    <li class="li4 pay" ng-class="{pay: item.status==0}">
+                                        <div class="pay-btn">立即支付</div>
+                                        <a href="#">交易详情</a>
+                                        <a href="#">删除</a>
+                                    </li>
+                                </ul>
+                                <!-- end ngRepeat: item in recordData -->
+                                <ul ng-repeat="item in recordData" class="content-item clearfix ng-scope">
+                                    <li class="li1 clearfix">
+                                        <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                                        <div class="item-info">
+                                            <h1 class="ng-binding">《犹太人在郑州》</h1>
+                                            <h3 class="ng-binding">by 万娱引力</h3>
+                                            <p class="ng-binding">订单号：6</p>
+                                        </div>
+                                    </li>
+                                    <li class="li2 ng-binding">￥160,697.00</li>
+                                    <li class="li3 ng-binding">已支付</li>
+                                    <li class="li4" ng-class="{pay: item.status==0}">
+                                        <div class="pay-btn">立即支付</div>
+                                        <a href="#">交易详情</a>
+                                        <a href="#">删除</a>
+                                    </li>
+                                </ul>
+                                <!-- end ngRepeat: item in recordData -->
+                                <ul ng-repeat="item in recordData" class="content-item clearfix ng-scope">
+                                    <li class="li1 clearfix">
+                                        <img ng-src="/images/proj/20151214170904.jpg" alt="" src="/images/proj/20151214170904.jpg">
+                                        <div class="item-info">
+                                            <h1 class="ng-binding">《犹太人在郑州》</h1>
+                                            <h3 class="ng-binding">by 人人娱乐</h3>
+                                            <p class="ng-binding">订单号：6</p>
+                                        </div>
+                                    </li>
+                                    <li class="li2 ng-binding">￥543,101.00</li>
+                                    <li class="li3 ng-binding">未支付</li>
+                                    <li class="li4 pay" ng-class="{pay: item.status==0}">
+                                        <div class="pay-btn">立即支付</div>
+                                        <a href="#">交易详情</a>
+                                        <a href="#">删除</a>
+                                    </li>
+                                </ul>
+                                <!-- end ngRepeat: item in recordData -->
+                            </div>
+                            <ul uib-pagination="" items-per-page="count" total-items="countAll" ng-model="page" max-size="maxSize" boundary-links="true" ng-change="pageChanged()" class="ng-pristine ng-untouched ng-valid ng-isolate-scope pagination ng-not-empty">
+                                <!-- ngIf: ::boundaryLinks -->
+                                <li ng-if="::boundaryLinks" ng-class="{disabled: noPrevious()||ngDisabled}" class="pagination-first ng-scope disabled"><a href="" ng-click="selectPage(1, $event)" ng-disabled="noPrevious()||ngDisabled" uib-tabindex-toggle="" class="ng-binding" disabled="disabled" tabindex="-1">First</a></li>
+                                <!-- end ngIf: ::boundaryLinks -->
+                                <!-- ngIf: ::directionLinks -->
+                                <li ng-if="::directionLinks" ng-class="{disabled: noPrevious()||ngDisabled}" class="pagination-prev ng-scope disabled"><a href="" ng-click="selectPage(page - 1, $event)" ng-disabled="noPrevious()||ngDisabled" uib-tabindex-toggle="" class="ng-binding" disabled="disabled" tabindex="-1">Previous</a></li>
+                                <!-- end ngIf: ::directionLinks -->
+                                <!-- ngRepeat: page in pages track by $index -->
+                                <li ng-repeat="page in pages track by $index" ng-class="{active: page.active,disabled: ngDisabled&amp;&amp;!page.active}" class="pagination-page ng-scope active"><a href="" ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&amp;&amp;!page.active" uib-tabindex-toggle="" class="ng-binding">1</a></li>
+                                <!-- end ngRepeat: page in pages track by $index -->
+                                <li ng-repeat="page in pages track by $index" ng-class="{active: page.active,disabled: ngDisabled&amp;&amp;!page.active}" class="pagination-page ng-scope"><a href="" ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&amp;&amp;!page.active" uib-tabindex-toggle="" class="ng-binding">2</a></li>
+                                <!-- end ngRepeat: page in pages track by $index -->
+                                <li ng-repeat="page in pages track by $index" ng-class="{active: page.active,disabled: ngDisabled&amp;&amp;!page.active}" class="pagination-page ng-scope"><a href="" ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&amp;&amp;!page.active" uib-tabindex-toggle="" class="ng-binding">3</a></li>
+                                <!-- end ngRepeat: page in pages track by $index -->
+                                <li ng-repeat="page in pages track by $index" ng-class="{active: page.active,disabled: ngDisabled&amp;&amp;!page.active}" class="pagination-page ng-scope"><a href="" ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&amp;&amp;!page.active" uib-tabindex-toggle="" class="ng-binding">4</a></li>
+                                <!-- end ngRepeat: page in pages track by $index -->
+                                <li ng-repeat="page in pages track by $index" ng-class="{active: page.active,disabled: ngDisabled&amp;&amp;!page.active}" class="pagination-page ng-scope"><a href="" ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&amp;&amp;!page.active" uib-tabindex-toggle="" class="ng-binding">5</a></li>
+                                <!-- end ngRepeat: page in pages track by $index -->
+                                <!-- ngIf: ::directionLinks -->
+                                <li ng-if="::directionLinks" ng-class="{disabled: noNext()||ngDisabled}" class="pagination-next ng-scope"><a href="" ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">Next</a></li>
+                                <!-- end ngIf: ::directionLinks -->
+                                <!-- ngIf: ::boundaryLinks -->
+                                <li ng-if="::boundaryLinks" ng-class="{disabled: noNext()||ngDisabled}" class="pagination-last ng-scope"><a href="" ng-click="selectPage(totalPages, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle="" class="ng-binding">Last</a></li>
+                                <!-- end ngIf: ::boundaryLinks -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="navList clearfix">
+            <div class="navleft"><span>关于全民共进</span><span>|</span><span>全民共进用户协议</span><span>|</span><span>全民共进风险提示</span><span>|</span><span>联系我们</span></div>
+            <div class="navright"><span class="navcl1">全民</span><span class="navcl2">共进</span><span> ©2015</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

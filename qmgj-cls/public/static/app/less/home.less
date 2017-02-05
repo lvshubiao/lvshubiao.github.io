@@ -1,0 +1,286 @@
+.qmgj-p-home {
+    margin: 0 auto;
+    width: 1200px;
+    .home-slide {
+        width: 100%;
+        height: 596px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+        }
+        .slide-pointer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 15px;
+            text-align: center;
+            span {
+                display: inline-block;
+                width: 50px;
+                height: 5px;
+                background: #fff;
+                margin: 0 5px;
+                cursor: pointer;
+                &.active,
+                &:hover {
+                    background: #b4ddfd;
+                }
+            }
+        }
+    }
+    .hot-box {
+        background: #f7fafa;
+        padding-top: 55px;
+        padding-bottom: 60px;
+        border-top: 1px solid #d9d8e0;
+        border-bottom: 1px solid #dadadb;
+        .box-left {
+            float: left;
+            width: 940px;
+            padding-left: 80px;
+            .left-title {
+                line-height: 55px;
+                margin-bottom: 25px;
+                h1 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    float: left;
+                    color: #000;
+                }
+                a {
+                    float: right;
+                    color: #838887;
+                    &:hover {
+                        color: #fd4500;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .box-content {
+                .hot-img {
+                    float: left;
+                    display: block;
+                    width: 320px;
+                    height: 240px;
+                }
+                .hot-info {
+                    float: right;
+                    width: 510px;
+                    color: #808584;
+                    font-size: 12px;
+                    h1 {
+                        color: #000;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    .hot-h3 {
+                        line-height: 30px;
+                    }
+                    .hot-p {
+                        padding: 15px 0;
+                        margin-bottom: 20px;
+                        line-height: 18px;
+                    }
+                    .sprite-mark,
+                    .sprite-tv {
+                        padding-left: 20px;
+                        padding-right: 40px;
+                    }
+                    .process-box {
+                        margin: 10px 0;
+                        height: 10px;
+                        background-color: #d9d8de;
+                        border-radius: 8px;
+                        .process {
+                            width: 0;
+                            height: 10px;
+                            border-radius: 8px;
+                            background-color: #ff4301;
+                        }
+                    }
+                    .info-box {
+                        li {
+                            float: left;
+                            padding-right: 20px;
+                            h1 {
+                                color: #000;
+                                font-weight: 700;
+                                font-size: 16px;
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .box-right {
+            float: right;
+            width: 210px;
+            border-left: 1px solid #d8dbdb;
+            >li {
+                line-height: 30px;
+                padding-left: 18px;
+                cursor: pointer;
+                color: #150a0b;
+                border-left: 2px solid transparent;
+                &.active,
+                &:hover {
+                    border-left: 2px solid #ff4301;
+                    color: #ff4301;
+                }
+            }
+        }
+    }
+    .tv-box {
+        width: 1040px;
+        margin: 0 auto;
+        .tv-title {
+            padding: 50px 0;
+            position: relative;
+            h1 {
+                font-size: 18px;
+                font-weight: 700;
+                color: #000;
+            }
+            a {
+                display: block;
+                padding: 8px;
+                color: #a3a6a5;
+                font-size: 14px;
+                border: 1px solid #a3a6a5;
+                border-radius: 4px;
+                position: absolute;
+                top: 45px;
+                right: 0;
+            }
+        }
+        .tv-content {
+            margin-left: -40px;
+            >li {
+                float: left;
+                width: 360px;
+                padding-left: 40px;
+                padding-bottom: 40px;
+                .tv-item {
+                    border: 1px solid #dededf;
+                    border-radius: 4px;
+                    padding-bottom: 20px;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 235px;
+                    }
+                    .tv-info {
+                        padding: 0 10px;
+                        font-size: 12px;
+                        h1 {
+                            color: #000;
+                            font-size: 14px;
+                            font-weight: 700;
+                            padding-top: 5px;
+                        }
+                        .hot-h3 {
+                            line-height: 24px;
+                        }
+                        .hot-p {
+                            padding: 15px 0;
+                            height: 66px;
+                            line-height: 18px;
+                        }
+                        .sprite-mark,
+                        .sprite-tv {
+                            padding-left: 20px;
+                            padding-right: 40px;
+                        }
+                        .process-box {
+                            margin: 8px 0;
+                            height: 6px;
+                            background-color: #d9d8de;
+                            border-radius: 8px;
+                            .process {
+                                width: 0;
+                                height: 6px;
+                                border-radius: 8px;
+                                background-color: #ff4301;
+                            }
+                        }
+                        .info-box {
+                            li {
+                                float: left;
+                                padding-right: 20px;
+                                h1 {
+                                    color: #000;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .unit-box{
+        padding: 0 80px 80px;
+        border-top: 1px solid #dadadb;
+        h1{
+            line-height: 150px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+        }
+        ul{
+            margin-right: -20px;
+            li{
+                float: left;
+                width: 212px;
+                padding-right: 20px;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.outerteam {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #d9d9de;
+    .teamwork {
+        width: 1040px;
+        margin: 0 auto;
+        padding: 70px 0px 88px;
+        .work {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 64px;
+            font-weight: bold;
+        }
+        .alltv {
+            width: 100%;
+            margin-left: -24px;
+            li {
+                float: left;
+                padding-left: 24px;
+                width: 190px;
+                cursor: pointer;
+                a {
+                    display: block;
+                    width: 100%;
+                    border: 1px solid #e2e2e6;
+                    img {
+                        width: 100%;
+                        height: 82px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

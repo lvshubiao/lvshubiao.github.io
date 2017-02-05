@@ -1,0 +1,72 @@
+.vip-info-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 30px 35px 15px;
+    margin-bottom: 15px;
+    .info-group {
+        margin-bottom: 20px;
+        legend {
+            float: left;
+            width: 80px;
+            margin-right: 20px;
+            text-align: right;
+        }
+        input{
+        	border: 1px solid #dcdcdd;
+        	border-radius: 2px;
+        }
+        &.userimg {
+            input {
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter:alpha(opacity=0);
+            }
+        }
+        .info-item {
+            float: left;
+            width: 690px;
+            position: relative;
+            .fileup {
+                width: 70px;
+                height: 70px;
+                background: url(images/sprite-list.png);
+                background-position: 0 0;
+            }
+            li.info-radio{
+                float: left;
+                padding-left: 18px;
+                padding-right: 15px;
+                background: url(images/sprite-list.png);
+                background-position: 0 -306px;
+                &.active{
+                    background-position: 0 -244px;
+                }
+            }
+            li.info-checkbox{
+                float: left;
+                padding-left: 20px;
+                width: 90px;
+                cursor: pointer;
+                background: url(images/sprite-list.png);
+                background-position: 0 -1476px;
+                &.active{
+                    background-position: 0 -1413px;
+                }
+            }
+            .info-btn{
+                width: 140px;
+                line-height: 45px;
+                text-align: center;
+                color: #fff;
+                background-color: #ff4300;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        }
+    }
+}
