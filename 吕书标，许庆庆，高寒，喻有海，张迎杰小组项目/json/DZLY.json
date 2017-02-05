@@ -1,0 +1,42 @@
+{
+  "resultCode":"0000",
+  "slides": [
+    {
+      "img": "../images/img12/4zIAiN.jpg"
+    },
+    {
+      "img": "../images/img12/qh7pNP.jpg"
+    },
+    {
+      "img": "../images/img12/Qm23tn.jpg"
+    }
+  ],
+  "qiye": [
+    [
+      {"img":"../images/img12/eiDWU9.jpg","title":"【文艺厦门","desc":"厦门双飞4日游"}
+    ],
+    [
+      {"img":"../images/img12/T0mNxj.jpg","title":"邂逅杭州","desc":"杭州+乌镇双飞4日游"},
+      {"img":"../images/img12/z1yB1W.jpg","title":"印象云南","desc":"昆明+大理+丽江6日游"},
+      {"img":"../images/img12/h6UKm7.jpg","title":"尊享泰国","desc":"曼谷+芭提雅5晚6日游"},
+      {"img":"../images/img12/SzksQA.jpg","title":"畅游北京","desc":"北京双飞5日游"},
+      {"img":"../images/img12/DSkabR.jpg","title":"会玩三亚","desc":"三亚5日双飞游"},
+      {"img":"../images/img12/r4Rrn6.jpg","title":"非凡法瑞意","desc":"11晚13日游 一价全含"}
+    ]
+  ],
+  "person": [
+    [
+      {"img":"../images/img12/4bANYB.jpg","title":"【品质日本","desc":"名古屋+大阪+京都+富士山+东京"}
+    ],
+    [
+      {"img":"../images/img12/tlgd8r.jpg","title":"悠游长滩","desc":"长滩岛6天4晚自由行"},
+      {"img":"../images/img12/NXz0PF.jpg","title":"轻奢韩国","desc":"韩国济州岛4日游"},
+      {"img":"../images/img12/wCyy5I.jpg","title":"山水桂林","desc":"桂林双飞4日游"},
+      {"img":"../images/img12/S5AA24.jpg","title":"浪漫希腊","desc":"希腊深度6晚9日游"},
+      {"img":"../images/img12/pwZ5nF.jpg","title":"马尔代夫","desc":"港丽岛4晚6日自由行"},
+      {"img":"../images/img12/gaxQzx.jpg","title":"经典曼芭","desc":"曼谷+芭提雅6/7日游"}
+    ]
+  ]
+  
+}
+

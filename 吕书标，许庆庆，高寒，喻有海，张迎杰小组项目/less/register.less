@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+}
+.clearfix{
+	*zoom:1
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #0185c6;
+    outline: 0;
+}
+img{
+	border: 0;
+}
+
+.z-header{
+	width: 1190px;
+    margin: 8px auto 0;
+    a{
+    	float: left;
+    	margin-top: 16px;
+    }
+    .welcome{
+    	float: left;
+    	margin: 45px 0 0 15px;
+    	>h2{
+    		font-size: 22px;
+		    color: #333;
+		    font-weight: 400;
+		    margin-right: 10px;
+    	}
+    }
+    .login_entry{
+    	float: right;
+	    font-size: 14px;
+	    color: #666;
+	    font-weight: 400;
+	    margin-top: 42px;
+	    >p{
+	    	line-height: 30px;
+	    	>a{
+	    		display: inline-block;
+			    margin: 0 0 0 6px;
+			    float: right;
+			    width: 58px;
+			    height: 26px;
+			    border: 1px solid #ddd;
+			    border-radius: 2px;
+			    color: #666;
+			    text-align: center;
+			    line-height: 26px;
+	    	}
+	    }
+    }
+}
+.z-container{
+	margin-top: 12px;
+	width: 1190px;
+	display: block;
+    margin: 8px auto 0;
+    .panel{
+    	.panel_middle{
+    		padding: 25px 0 0;
+    		.step_name{
+				background: url(../images/regiterImages/reg2.png) 0 -9px no-repeat;
+				>li{
+					float: left;
+				    height: 34px;
+				    text-align: center;
+				    font-size: 16px;
+				    width: 246px;
+				    font: 700 16px/24px "Microsoft YaHei";
+				    color: #999;
+				    padding-top: 26px;
+				}
+				.step_name_1{
+					color: #50b400;
+					margin-left: 208px;
+				}
+				.step_name_3{
+					margin-left: 32px;
+				}
+    		}
+    		.step_cont_1{
+    			margin-top: 40px;
+    			.register_wrapper{
+				    float: left;
+					margin-left: 274px;
+					.prompt{
+					    margin-left: 4px;
+						color: #999;
+					}
+					.register_info_line{
+						padding: 17px 0;
+						.label{
+							display: inline-block;
+						    width: 95px;
+						    text-align: right;
+						    font-size: 14px;
+						    color: #333;
+						    .requied_symbol{
+						    	color: red;
+							    margin-right: 5px;
+							    font-size: 14px;
+						    }
+						}
+						.input{
+							margin-left: 10px;
+						    width: 258px;
+						    height: 32px;
+						    border: 1px solid #ddd;
+						    border-radius: 2px;
+						    padding-left: 10px;
+						    line-height: 32px;
+						    box-shadow: 0.5px 1px 1px #eaeaea inset;
+						    font-size: 18px;
+						    font-family: Arial;
+						    color: #666;
+						}
+						.verif_code{
+							width: 105px;
+						}
+						.verif_code_img{
+							width: 78px;
+						    height: 34px;
+						    vertical-align: middle;
+						    cursor: pointer;
+						    margin-left: 10px;
+						}
+						.change_verif_code_img{
+							color: #0185c6;
+						    font-size: 14px;
+						    margin-left: 4px;
+						    cursor: pointer;
+						}
+					}
+					#telline{
+						position: relative;
+						em{
+							width: 14px;
+						    height: 21px;
+						    display: inline-block;
+						    position: absolute;
+						    left: 355px;
+						    top: 24px;
+						    background-position: -863px -195px;
+						    background: url(../images/regiterImages/reg2.png) no-repeat;
+						}
+					}
+					.c_two_register_info_line{
+						height: 34px;
+					    line-height: 34px;
+					    position: relative;
+					    .label{
+				    	    float: left;
+							color: #333;
+					    }
+					    input{
+					    	float: left;
+    						margin-left: 13px;
+					    }
+					    em{
+					    	width: 16px;
+						    height: 18px;
+						    display: inline-block;
+						    position: absolute;
+						    left: 355px;
+						    top: 25px;
+						    background-position: -906px -196px;
+						    background: url(../images/regiterImages/reg2.png) no-repeat;
+					    }
+					}
+					.password_strength{
+						padding: 0 0 0 210px;
+    					line-height: 16px;
+    					span{
+    						float: left;
+						    color: #999;
+						    font-size: 12px;
+    					}
+    					>li{
+    						float: left;
+						    width: 34px;
+						    margin-left: 2px;
+						    display: inline;
+						    >p{
+						    	padding: 0;
+							    margin: 0;
+							    height: 14px;
+							    overflow: hidden;
+							    color: #fff;
+							    font-size: 11px;
+							    text-align: center;
+							    line-height: 14px;
+							    background-color: #ccc;
+						    }
+    					}
+					}
+					.c_two_register_second_info_line{
+						position: relative;
+						em{
+							width: 16px;
+						    height: 18px;
+						    display: inline-block;
+						    position: absolute;
+						    left: 355px;
+						    top: 25px;
+						    background-position: -906px -196px;
+						    background: url(../images/regiterImages/reg2.png) no-repeat;
+						}
+					}
+					.has_co_brand_card_line{
+						>em{
+							width: 13px;
+						    height: 13px;
+						    display: inline-block;
+						    border: 1px solid #ccc;
+						    vertical-align: middle;
+						    margin-left: 10px;
+						}
+						.prompt{
+							color: #666;
+						}
+					}
+					.has_read_and_agree_line{
+						line-height: 33px;
+						>em{
+							width: 13px;
+						    height: 13px;
+						    display: inline-block;
+						    border: 1px solid #ccc;
+						    vertical-align: middle;
+						    margin-left: 10px;
+						}
+						.gou{
+							background: url(../images/regiterImages/reg2.png)no-repeat;
+							background-position: 2px -529px;
+						}
+						.has_read{
+							color: #666;
+    						margin-left: 4px;
+						}
+					}
+					.register_submit_btn_wrapper{
+						padding-left: 205px;
+						.register_submit_btn{
+							display: inline-block;
+						    width: 220px;
+						    height: 42px;
+						    color: #fff;
+						    font: 20px/42px "Microsoft YaHei";
+						    text-align: center;
+						    background-color: #ff7800;
+						    border-radius: 3px;
+						}
+					}
+    			}
+    		}
+    	}
+    }
+}
+.z-footer{
+	margin-top: 83px;
+    padding: 10px 0 20px;
+    border-top: 1px solid #eee;
+    color: #999;
+    line-height: 20px;
+    text-align: center;
+    width: 1190px;
+    margin: 8px auto 0;
+    a{
+    	color:#999;
+    }
+}

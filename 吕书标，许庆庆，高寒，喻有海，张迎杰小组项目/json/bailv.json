@@ -1,0 +1,154 @@
+{
+    "slides": [{
+        "name": "首届中老年旅游春晚海选中老年会员风采",
+        "img": "../images/bailvimg/aa1.jpg"
+    }, {
+        "name": "首届中老年旅游春晚海选会员表演节目《养生武舞》",
+        "img": "../images/bailvimg/aa2.jpg"
+    }, {
+        "name": "首届中老年旅游春晚节海会员表演节目《团队风采》",
+        "img": "../images/bailvimg/aa3.jpg"
+    }, {
+        "name": "首届中老年旅游春晚海选会员表演节目火凤凰",
+        "img": "../images/bailvimg/aa4.jpg"
+    },{
+        "name": "首届中老年旅游春晚海选会员表演节目火凤凰",
+        "img": "../images/bailvimg/aa5.jpg"
+    },{
+        "name": "首届中老年旅游春晚海选会员表演节目火凤凰",
+        "img": "../images/bailvimg/aa6.jpg"
+    },{
+        "name": "首届中老年旅游春晚海选会员表演节目火凤凰",
+        "img": "../images/bailvimg/aa7.jpg"
+    },{
+        "name": "首届中老年旅游春晚海选会员表演节目火凤凰",
+        "img": "../images/bailvimg/aa8.jpg"
+    },{
+        "name": "首届中老年旅游春晚海选会员表演节目火凤凰",
+        "img": "../images/bailvimg/aa9.jpg"
+    },{
+        "name": "首届中老年旅游春晚海选会员表演节目火凤凰",
+        "img": "../images/bailvimg/aa10.jpg"
+    }],
+    "gushi": [{
+        "maskimg": "../images/bailvimg/mask1.png",
+        "name": "【敬一丹读故事】“老夫聊发少年狂”八旬老人志在“世界之旅”",
+        "img": "../images/bailvimg/gg1.jpg"
+    }, {
+        "maskimg": "../images/bailvimg/mask2.png",
+        "name": "【敬一丹读故事】我已满头白发，但我爱你如初",
+        "img": "../images/bailvimg/gg2.jpg"
+    }, {
+        "maskimg": "../images/bailvimg/mask3.png",
+        "name": "【敬一丹读故事】这一生，我们一起行走",
+        "img": "../images/bailvimg/gg3.jpg"
+    }, {
+        "maskimg": "../images/bailvimg/mask4.png",
+        "name": "【敬一丹读故事】爱，不仅是常回家看看，还是陪他们出去走走",
+        "img": "../images/bailvimg/gg4.jpg"
+    }],
+    "gushi1": [{
+        "name": "【敬一丹读故事】“老夫聊发少年狂”八旬老人志在“世界之旅”",
+        "img": "../images/bailvimg/gg1.jpg"
+    }, {
+        "name": "【敬一丹读故事】我已满头白发，但我爱你如初",
+        "img": "../images/bailvimg/gg2.jpg"
+    }, {
+        "name": "【敬一丹读故事】这一生，我们一起行走",
+        "img": "../images/bailvimg/gg3.jpg"
+    }, {
+        "name": "【敬一丹读故事】爱，不仅是常回家看看，还是陪他们出去走走",
+        "img": "../images/bailvimg/gg4.jpg"
+    }],
+    "unit": [{
+        "ad": "四川",
+        "name": "南浔首发团活动",
+        "img": "../images/bailvimg/a1.jpg"
+    }, {
+        "ad": "上海",
+        "name": "同程体验店—包饺子大赛",
+        "img": "../images/bailvimg/a2.jpg"
+    }, {
+        "ad": "浙江",
+        "name": "同程体验店—歌舞比拼",
+        "img": "../images/bailvimg/a3.jpg"
+    }, {
+        "ad": "广州",
+        "name": "同程体验店—书法国画体验活动",
+        "img": "../images/bailvimg/a4.jpg"
+    }, {
+        "ad": "重庆",
+        "name": "同程体验店—养生舞剑体验活动",
+        "img": "../images/bailvimg/a5.jpg"
+    }, {
+        "ad": "郑州",
+        "name": "同程体验店—戏曲比拼大赛",
+        "img": "../images/bailvimg/a6.jpg"
+    }, {
+        "ad": "西安",
+        "name": "同程体验店—插花才艺大赛",
+        "img": "../images/bailvimg/a7.jpg"
+    }, {
+        "ad": "北京",
+        "name": "同程体验店—学习大课堂",
+        "img": "../images/bailvimg/a8.jpg"
+    }],
+    "vip": [{
+        "img": "../images/bailvimg/vip1.png",
+        "tit": "宣阿姨",
+        "wish": "心愿：身体健康，到各地方去看看"
+    }, {
+        "img": "../images/bailvimg/vip2.png",
+        "tit": "邱爷爷",
+        "wish": "心愿：已经走了50多个国家，想要走完世界100个国家"
+    }, {
+        "img": "../images/bailvimg/vip3.png",
+        "tit": "于阿姨",
+        "wish": "心愿：退休后，希望和老伴一起出国看看，走遍全世界"
+    }, {
+        "img": "../images/bailvimg/vip4.png",
+        "tit": "范阿姨",
+        "wish": "心愿：身体健康，到各地方去看看"
+    }],
+    "comments": [{
+        "address": "北京Vip会员",
+        "titleimg": "../images/bailvimg/j1.png",
+        "neirong": "家人去玩的非常的开心，反应导游和服务人员非常的贴心。有特色的游戏，叔叔获得了第一名，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }, {
+        "address": "上海Vip会员",
+        "titleimg": "../images/bailvimg/j2.png",
+        "neirong": "今天天气真好"
+    }, {
+        "address": "深圳Vip会员",
+        "titleimg": "../images/bailvimg/j3.png",
+        "neirong": "很满意帮其他的旅行社不一样有他们的有你们的特色棒棒的我今后一定会参加你们的活动"
+    }, {
+        "address": "云南Vip会员",
+        "titleimg": "../images/bailvimg/j3.png",
+        "neirong": "有特色的游戏，叔叔获得了第一名，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }, {
+        "address": "重庆Vip会员",
+        "titleimg": "../images/bailvimg/j2.png",
+        "neirong": "家人去玩的非常的开心，反应导游和服务人员非常的贴心。有特色的游戏，叔叔获得了第一名，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }, {
+        "address": "深圳Vip会员",
+        "titleimg": "../images/bailvimg/j1.png",
+        "neirong": "叔叔获得了第一名，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }, {
+        "address": "广州Vip会员",
+        "titleimg": "../images/bailvimg/j1.png",
+        "neirong": "反应导游和服务人员非常的贴心。有特色的游，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }, {
+        "address": "大理Vip会员",
+        "titleimg": "../images/bailvimg/j1.png",
+        "neirong": "家人去玩的非常的开心，反应导游和服务人员非常的贴心。有特色的游戏，叔叔获得了第一名，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }, {
+        "address": "郑州Vip会员",
+        "titleimg": "../images/bailvimg/j3.png",
+        "neirong": "家人去玩的非常的开心，有特色的游戏，叔叔获得了第一名，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }, {
+        "address": "成都Vip会员",
+        "titleimg": "../images/bailvimg/j2.png",
+        "neirong": "家人去玩的非的游戏，叔叔获得了第一名，还有奖品的，蔬菜也很新鲜，希望百旅会可以越办越好，这样可以让更多的人知道这个好的产品，有更多的人来加入。"
+    }]
+}

@@ -1,0 +1,138 @@
+{
+    "resultCode": "0000",
+    "slides": [
+        { "img": "images/images1/slide1.jpg" },
+        { "img": "images/images1/slide2.jpg" },
+        { "img": "images/images1/slide3.png" },
+        { "img": "images/images1/slide4.jpg" },
+        { "img": "images/images1/slide5.jpg" },
+        { "img": "images/images1/slide6.png" }
+    ],
+    "hot": [{
+        "img": "images/images1/hot1.jpg.webp",
+        "desc": "三亚+蜈支洲岛+猴岛+天堂森林公园+大小洞天+天涯海角双飞5日跟团游",
+        "start": "郑州出发",
+        "money": "￥3034"
+    }, {
+        "img": "images/images1/hot2.jpg.webp",
+        "desc": "丽江+大理+洱海双飞6日自由行",
+        "start": "郑州出发",
+        "money": "￥2171"
+    }, {
+        "img": "images/images1/hot3.jpg.webp",
+        "desc": "【同程推荐】日本大阪+京都+富士山+东京+奈良6晚7日游",
+        "start": "郑州出发",
+        "money": "￥1212"
+    }, {
+        "img": "images/images1/hot4.jpg.webp",
+        "desc": "台湾环岛直飞7晚8日品质游",
+        "start": "郑州出发",
+        "money": "￥3034"
+    }, {
+        "img": "images/images1/gg.jpg"
+    }],
+    "jingxuan": [
+        { "img": "images/images1/jingxuan1.jpg", "mask": "初识巴厘6晚8日跟团游", "start": "郑州出发", "money": "￥3452" },
+        { "img": "images/images1/jingxuan2.jpg", "mask": "【春节预售】蓝梦沙巴4晚5日半自助游", "start": "郑州出发", "money": "￥34152" },
+        { "img": "images/images1/jingxuan3.jpg", "mask": "【百旅会】【广州高去飞返】【神女系列】【含重庆市内游】宜昌-重庆 4晚5日游", "start": "郑州出发", "money": "￥3452" },
+        { "img": "images/images1/jingxuan4.jpg", "mask": "厦门+鼓浪屿+云水谣土楼双飞5日跟团游", "start": "郑州出发", "money": "￥342352" },
+        { "img": "images/images1/jingxuan5.jpg", "mask": "三亚+蜈支洲岛+猴岛+天堂森林公园+大小洞天+天涯海角双飞5日跟团游", "start": "宜昌", "money": "￥3452" },
+        { "img": "images/images1/jingxuan6.jpg", "mask": "自选开封清明上河园官驿酒店清明上河园", "start": "开封出发", "money": "￥2222" }
+    ],
+    "zhoubian": [
+        { "img": "images/images1/zhoubian1.jpg", "mask": "【超值一日】<龟山汉墓-淮塔景区-云龙湖汽车1日>徐州地接", "start": "郑州出发", "money": "￥3452", "mask2": "自由行" },
+        { "img": "images/images1/zhoubian2.jpg", "mask": "【春节预热】<少林寺-龙门石窟1日游>郑州市三环内免费接", "start": "郑州出发", "money": "￥34152", "mask2": "自由行" },
+        { "img": "images/images1/zhoubian3.jpg", "mask": "自选泰安银座佳悦酒店泰安方特欢乐世界", "start": "郑州出发", "money": "￥3452", "mask2": "自由行" },
+        { "img": "images/images1/zhoubian4.jpg", "mask": "厦门+鼓浪屿+云水谣土楼双飞5日跟团游", "start": "郑州出发", "money": "￥342352", "mask2": "跟团游" },
+        { "img": "images/images1/zhoubian5.jpg", "mask": "三亚+蜈支洲岛+猴岛+天堂森林公园+大小洞天+天涯海角双飞5日跟团游", "start": "宜昌", "money": "￥3452", "mask2": "跟团游" },
+        { "img": "images/images1/zhoubian6.jpg", "mask": "自选开封清明上河园官驿酒店清明上河园", "start": "开封出发", "money": "￥2222", "mask2": "跟团游" },
+        { "img": "images/images1/zhoubian7.jpg", "mask": "自选开封清明上河园官驿酒店清明上河园", "start": "开封出发", "money": "￥2222", "mask2": "自由行" },
+        { "img": "images/images1/zhoubian8.jpg", "mask": "自选开封清明上河园官驿酒店清明上河园", "start": "开封出发", "money": "￥2222", "mask2": "跟团游" }
+    ],
+    "mudi":["泰安","徐州","晋中","洛阳","太原","西安","石家庄","武汉","宜昌","南京","天津","北京"],
+    "chujingtitle":[["热推","东南亚","日韩","海岛","欧洲","中东非","澳新","美洲"],["亚洲","美澳","欧洲"]],
+    "chujingcontent1":[
+        [
+            {"img":"images/images1/global.jpg"},
+            {"img":"images/images1/retui1.jpg","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/retui2.jpg","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/retui3.jpg","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/retui4.jpg","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/retui5.jpg","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/retui6.jpg","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/retui7.jpg","mask1":"曼谷","mask2":"东方威尼斯"}
+        ],
+        [
+            {"img":"images/images1/global.jpg"},
+            {"img":"images/images1/dongnanya1.jpg.webp","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/dongnanya2.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/dongnanya3.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/dongnanya4.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/dongnanya5.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/dongnanya6.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/dongnanya7.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"}
+        ],
+        [
+            {"img":"images/images1/global.jpg"},
+            {"img":"images/images1/rihan1.jpg.webp","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/rihan2.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/rihan3.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/rihan4.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/rihan5.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/rihan6.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/rihan7.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"}
+        ],
+        [
+            {"img":"images/images1/global.jpg"},
+             {"img":"images/images1/haidao1.jpg.webp","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/haidao2.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/haidao3.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/haidao4.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/haidao5.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/haidao6.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/haidao7.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"}
+        ],
+        [
+            {"img":"images/images1/global.jpg"},
+             {"img":"images/images1/ouzhou1.jpg.webp","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/ouzhou2.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/ouzhou3.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/ouzhou4.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/ouzhou5.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/ouzhou6.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/ouzhou7.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"}
+        ],
+        [
+            {"img":"images/images1/global.jpg"},
+             {"img":"images/images1/zhongdongfei1.jpg.webp","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/zhongdongfei2.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/zhongdongfei3.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/zhongdongfei4.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/zhongdongfei5.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/zhongdongfei6.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/zhongdongfei7.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"}
+        ],
+        [
+            {"img":"images/images1/global.jpg"},
+             {"img":"images/images1/aoxin1.jpg.webp","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/aoxin2.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/aoxin3.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/aoxin4.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/aoxin5.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/aoxin6.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/aoxin7.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"}
+        ],
+        [
+            {"img":"images/images1/global.jpg"},
+             {"img":"images/images1/meizhou1.jpg.webp","mask1":"曼谷","mask2":"东方威尼斯"},
+            {"img":"images/images1/meizhou2.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/meizhou3.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/meizhou4.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/meizhou5.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/meizhou6.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"},
+            {"img":"images/images1/ouzhou7.jpg.webp","mask1":"岘港","mask2":"纯净的天然良港"}
+        ]
+
+    ]
+    
+}

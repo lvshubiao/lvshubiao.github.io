@@ -1,0 +1,62 @@
+{
+  "resultCode":"0000",
+  "slide": [
+    {
+      "img": "../images/image5/banner-a.jpg",
+      "name": "图一"
+    },
+    {
+      "img": "../images/image5/banner-b.jpg",
+      "name": "图二"
+    }
+  ],
+  "imgList": [
+    {
+      "img": "../images/image5/imglist_01.png",
+      "name": "0101",
+      "desc": "苏州-乌镇",
+      "price": "35"
+    },
+    {
+      "img": "../images/image5/imglist_02.png",
+      "name": "0102",
+      "desc": "苏州-西塘",
+      "price": "35"
+    },
+    {
+      "img": "../images/image5/imglist_03.png",
+      "name": "0103",
+      "desc": "苏州-周庄",
+      "price": "20"
+    },
+    {
+      "img": "../images/image5/imglist_04.png",
+      "name": "0104",
+      "desc": "苏州-常熟",
+      "price": "14"
+    },{
+      "img": "../images/image5/imglist_05.png",
+      "name": "0201",
+      "desc": "苏州-南通",
+      "price": "47"
+    },
+    {
+      "img": "../images/image5/imglist_06.png",
+      "name": "0202",
+      "desc": "苏州-溧阳",
+      "price": "53"
+    },
+    {
+      "img": "../images/image5/imglist_07.png",
+      "name": "0203",
+      "desc": "苏州-扬州",
+      "price": "78"
+    },
+    {
+      "img": "../images/image5/imglist_08.png",
+      "name": "0204",
+      "desc": "苏州-宜兴",
+      "price": "49"
+    }
+  ]
+}

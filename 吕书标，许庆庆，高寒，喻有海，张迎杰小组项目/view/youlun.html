@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/youlun.css">
+    <script src="../js/jquery/dist/jquery.min.js"></script>
+    <script src="../js/youlun.js"></script>
+    <script src="../js/underscore/underscore.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="l-top">
+        <div class="container clearfix">
+            <div class="l-top-left">
+                <span>您好，欢迎使用LY.com访问同程！</span>
+                <a href="login.html" class="login">登录</a>
+                <a href="register.html" class="reg">注册</a>
+                <a href="#" style="margin: 2px 0 0 8px;height: 22px;"><img src="../images/images1/dnRKSH.gif" alt=""></a>
+            </div>
+            <ul class="l-top-right">
+                <li>
+                    <a href="#">我的同程<span></span></a>
+                    <div class="l-hide l-div1">
+                        <div class="l-hello">
+                            <span>你好,<a href="">请登录</a></span>
+                        </div>
+                        <ul class="l-list clearfix">
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的信息</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">会员中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><i class="l-phone"></i>手机同程<span></span></a>
+                    <div class="l-hide l-div2">
+                        <a href="#"><img src="../images/images1/Mb5JnI.png" alt=""></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">微信<span></span></a>
+                    <div class="l-hide l-div3">
+                        <a href="#"></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">电话<span></span></a>
+                    <div class="l-hide l-div4">
+                        <p>国内电话:4007-777-777</p>
+                        <p>海外电话:+86-512-8220-9000</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">客户服务<span></span></a>
+                    <ul class="l-hide l-div5">
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">人工申诉</a></li>
+                        <li><a href="#">包团定制</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="l-logo container clearfix">
+        <div class="l-logo-left">
+            <a href="#">
+                <img src="../images/images1/gQ4fcp.png" alt="">
+            </a>
+        </div>
+        <div class="l-logo-right">
+            <a href="#"><img src="../images/images1/hTBLcH.png" alt=""></a>
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="l-nav">
+        <ul class="l-nav-list container clearfix">
+            <li><a href="../homePage.html">首页</a></li>
+            <li><a href="jiudian.html">酒店</a></li>
+            <li><a href="index.html">机票</a></li>
+            
+            <li><a href="busTicket.html">汽车票</a></li>
+            
+            <li><a href="travelAround.html">周边游</a><span class="l-hot">Hot</span></li>
+            
+            <li><a href="chujing.html">出境游</a></li>
+            <li class="active"><a href="youlun.html">游轮</a></li>
+           
+            <li><a href="DZLY.html">定制旅游</a></li>
+            <li><a href="bank.html">金融</a></li>
+            
+            <li><a href="bailv.html">百旅会</a><span class="l-hot">中老年</span></li>
+        </ul>
+    </div>
+    <div class="contain">
+        <script type="text/html" id="lunbo">
+            ##for(var i = 0;i
+            <arr2.length;i++){## <img src="{{arr2[i].img}}" alt="">
+                ##}##
+                <ul class="indicator clear">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="ly" id="ly">
+                    ##for(var i = 0;i
+                    <arr7.length;i++){## ##console.log(arr7[i].d1)## <li>
+                        <div class="lyroute sty">
+                            <h2>{{arr7[i].title}}</h2>
+                            <div class="hover-extra">
+                                ##for(var j = 0;j
+                                <arr7[i].d1.length;j++ ){## <a href="#">{{arr7[i].d1[j]}}</a>
+                                    ##}##
+                            </div>
+                        </div>
+                        </li>
+                        ##}##
+                </ul>
+                ##for(var i = 0;i
+                <arr8.length;i++){## <div class="neirong1">
+                    <h3>全部航线</h3>
+                    <div class="divhang clear">
+                        ##for(var j = 0;j
+                        <arr8[i].uu.length;j++){## <a href="#">{{arr8[i].uu[j]}}</a>
+                            ##}##
+                    </div>
+    </div>
+    ##}##
+    </script>
+    <div class="lunbo" id="lun">
+    </div>
+    <div class="bg_white">
+        <div class="news clear" id="new">
+            <script type="text/html" id="news">
+                ##for(var i = 0;i
+                <list.length;i++){## <a href="#">
+                    <img src="{{list[i].img}}" alt="">
+                    <span class="span1">{{list[i].tit1}}</span>
+                    <span class="span2">{{list[i].tit2}}</span>
+                    </a>
+                    ##}##
+            </script>
+        </div>
+    </div>
+    <div class="bg_gray">
+        <div class="unit-sales">
+            <div class="detail-unit-tit">
+                <a class="more" href="#">更多>></a>
+                <span class="tit">游轮特卖</span>
+                <div class="timer-box">
+                    <span class="hours">
+                        12
+                        </span>
+                    <i>:</i>
+                    <span class="minutes">
+                        60
+                        </span>
+                    <i>:</i>
+                    <span class="seconds">
+                        60
+                        </span>
+                </div>
+            </div>
+            <div class="sales-pro">
+                <div class="sales-box" id="scales">
+                    <script type="text/html" id="temai">
+                        ##for (var i = 0; i
+                        < list.length; i++){## <a href="#">
+                            <img src="{{list[i].img}}" alt="">
+                            <div class="dibai">
+                                <div class="sales-intro">
+                                    <p>{{list[i].txt1}}</p>
+                                </div>
+                                <div class="dec clear">
+                                    <span class="price">
+                                    <em>{{list[i].txt2}}</em>
+                                    <em>起</em>
+                                </span>
+                                    <span class="qiang">马上抢</span>
+                                </div>
+                            </div>
+                            </a>
+                            ##}##
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg_white">
+        <div class="detail-unit-tit">
+            <span class="tit">品质精选</span>
+            <span class="txt">经典航线打造品质追求</span>
+        </div>
+        <ul class="hangxian clear">
+            <li>日韩航线</li>
+            <li>国内航线</li>
+            <li>海外航线</li>
+        </ul>
+        <div class="good-info clear show" id="info1">
+        </div>
+        <div class="good-info clear show" id="info2">
+        </div>
+        <div class="good-info clear show" id="info3">
+        </div>
+        <script type="text/html" id="info">
+            ##for(var i = 0;i
+            <list.length;i++){## <a href="#">
+                <div class="imga">
+                    <img src="{{list[i].img}}" alt="">
+                    <span>{{list[i].price}}</span>
+                </div>
+                <p class="text1">{{list[i].text}}</p>
+                <div class="dec1">
+                    <span>{{list[i].t1}}</span>
+                    <span>{{list[i].t2}}</span>
+                    <span>{{list[i].my}}</span>
+                </div>
+                </a>
+                ##}##
+        </script>
+    </div>
+    <div class="bg_white bot clear">
+        <div class="detail-unit-tit1">
+            <span class="tit">了解游轮</span>
+            <span class="txt">吃、住、娱乐和服务，全方面的邮轮小专家</span>
+            <div class="navbox">
+                <ul class="cruise-tab">
+                    <li>皇家加勒比邮轮</li>
+                    <li>歌诗达邮轮</li>
+                    <li>天海邮轮</li>
+                    <li>美国公主邮轮</li>
+                    <li class="lstli">更多游轮</li>
+                </ul>
+                <div id="bignav">
+                    <script type="text/html" id="haiyang">
+                        ##for(var i = 0;i
+                        <list.length;i++){## <div class="nav show">
+                            <span>旗下游轮</span>
+                            <a href="#">{{list[i].tit}}</a>
+                </div>
+                ##}##
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="box1">
+        <script type="text/html" id="yyh">
+            ##for(var i = 0;i
+            <list.length;i++){## ##console.log(list[i].video);## <div class="bigBox clear show">
+                <div class="shipin">
+                    <img src="{{list[i].video}}" alt="">
+                    <span class="video"></span>
+                    <div class="intro">
+                        <div class="con clear">
+                            <div class="title">
+                                <span class="chinese">{{list[i].t1}}</span>
+                                <span class="english">{{list[i].t2}}}</span>
+                            </div>
+                            <ul class="list">
+                                <li>
+                                    <span class="number">{{list[i].t3}}</span>
+                                    <span>吨位</span>
+                                </li>
+                                <li>
+                                    <span class="number">{{list[i].t4}}</span>
+                                    <span>首航</span>
+                                </li>
+                                <li>
+                                    <span class="number">{{list[i].t5}}</span>
+                                    <span>载客</span>
+                                </li>
+                                <li>
+                                    <span class="number">{{list[i].t6}}</span>
+                                    <span>楼层</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="label">
+                            <span class="icon0">{{list[i].p1}}</span>
+                            <span class="icon1">{{list[i].p2}}</span>
+                            <span class="icon2">{{list[i].p3}}</span>
+                            <span class="icon3">{{list[i].p4}}</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="zhanshi clear">
+                    <li>
+                        <a href="#"><img src="{{list[i].img1}}" alt=""></a>
+                        <p>19家美食餐厅每天不重样</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{list[i].img2}}" alt=""></a>
+                        <p>19家美食餐厅每天不重样</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{list[i].img3}}" alt=""></a>
+                        <p>19家美食餐厅每天不重样</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{list[i].img4}}" alt=""></a>
+                        <p>19家美食餐厅每天不重样</p>
+                    </li>
+                    <li class="lastli clear">
+                        <img src="{{list[i].img5}}" alt="">
+                        <a href="#" class="clear lasta">
+                            <p class="xiangqing">【皇家加勒比-海洋量子号】2017年3月3日 上海-釜山-长崎-上海 5晚6日游</p>
+                            <p class="price1">￥3399元</p>
+                        </a>
+                    </li>
+                </ul>
+    </div>
+    ##}##
+    </script>
+    </div>
+    </div>
+    <div class="bg_gray">
+        <div class="detail-unit-tit">
+            <span class="tit">游记攻略</span>
+            <span class="txt">这里熙熙攘攘,你,又会遇见谁创造的美好</span>
+            <ul class="cruise-tab1 clear" id="ultitle">
+                <script type="text/html" id="lil">
+                    ##for(var i = 0;i
+                    <list.length;i++){## <li>{{list[i].tti}}</li>
+                        ##}##
+                </script>
+            </ul>
+        </div>
+        <script type="text/html" id="gong">
+            ##for(var i = 0;i
+            <list.length;i++){## <a href="#">
+                <img src="{{list[i].img}}" alt="">
+                <div class="travel-intro">
+                    <h2 class="tit1">{{list[i].pp}}</h2>
+                    <p class="ttxt1">皇家加勒比-海洋量子号</p>
+                    <p class="ttxt2">{{list[i].tt}}</p>
+                </div>
+                <div class="travel-dec clear">
+                    <div class="autor clear">
+                        <img src="{{list[i].autor}}" alt="">
+                        <span>{{list[i].tt1}}</span>
+                    </div>
+                    <div class="see">
+                        <i class="icon-img"></i>
+                        <span>192251</span>
+                    </div>
+                </div>
+                </a>
+                ##}##
+        </script>
+        <div class="travel-info show clear" id="youji">
+        </div>
+        <div class="travel-info show clear" id="youji1">
+        </div>
+        <div class="travel-info show clear" id="youji2">
+        </div>
+        <div class="travel-info show clear" id="youji3">
+        </div>
+    </div>
+    <div class="bg_white">
+        <div class="detail-unit-tit">
+            <span class="tit">同城游轮+</span>
+            <span class="txt">同程邮轮为您打造不一样的玩法</span>
+        </div>
+        <div class="imglist clear" id="youlun">
+            <script type="text/html" id="ylun">
+                ##for(var i = 0;i
+                <list.length;i++){## <a href="#">
+                    <img src="{{list[i].img}}" alt="">
+                    <div class="mask">
+                        <h4>{{list[i].ti}}</h4>
+                    </div>
+                    </a>
+                    ##}##
+            </script>
+            <a href="#">
+                <img src="../images/img/brand-1.jpg" alt="">
+                <div class="mask">
+                    <h4>优势+特权</h4>
+                </div>
+            </a>
+            <a href="#">
+                <img src="../images/img/brand-1.jpg" alt="">
+                <div class="mask">
+                    <h4>优势+特权</h4>
+                </div>
+            </a>
+            <a href="#">
+                <img src="../images/img/brand-1.jpg" alt="">
+                <div class="mask">
+                    <h4>优势+特权</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="bigmask" style="display:none">
+    <div class="videodiv">
+    <div class="button">X</div>
+        <video src="http://tc-store-cruise.oss-cn-shanghai.aliyuncs.com/Cruises/2017/1/18/823ffc25d7f845aaa9ab7cd43e73e748.mp4" controls preload></video>        
+    </div>
+
+    </div>
+    <!-- footer -->
+    <footer>
+        <ul class="footer container clearfix">
+            <li>
+                <div class="clearfix">
+                    <div class="l-idea"></div>
+                    <span class="l-idea-desc">意见反馈</span>
+                </div>
+                <div class="clearfix l-tel24">
+                    <div></div>
+                    <p>24小时服务热线</p>
+                    <p>4007-777-777</p>
+                </div>
+            </li>
+            <!-- 关于同程 -->
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>关于同程</h2>
+                    </li>
+                    <li><a href="#">同程简介</a></li>
+                    <li><a href="#">可信网站</a></li>
+                    <li><a href="#">法律声明</a></li>
+                    <li><a href="#">网站地图</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>加盟合作</h2>
+                    </li>
+                    <li><a href="#">商务合作</a></li>
+                    <li><a href="#">网站加盟</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">业务资质</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>联系我们</h2>
+                    </li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">投诉建议</a></li>
+                    <li><a href="#">诚聘英才</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>同程旗下网站</h2>
+                    </li>
+                    <li>
+                        <a href="#" class="tcWebCn"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="tcWebCom"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="tcWebNet"></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>同程旅游app</h2>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/images1/QPSAEB.png" alt=""></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr class="container hr">
+        <ul class="footer-bottom container">
+            <li>服务热线：<span>4007-777-777</span></li>
+            <li>转1：已有订单处理</li>
+            <li>
+                转2：预订 机票转<span>1</span>景点/玩乐/电影票转<span>2</span>酒店转<span>3</span>周边游转<span>4</span> 周边游转
+                <span>5</span>周边游转<span>6</span></li>
+            <li> 转3：预订 机票转<span>1</span>景点/玩乐/电影票转<span>2</span>酒店转<span>3</span>周边游转<span>4</span></li>
+        </ul>
+    </footer>
+    <div class="l-outer">
+        <ul class="l-friendAnchor container">
+            <li>
+                <h2>友情链接:</h2></li>
+            <li><a href="#">酒店门票预订</a></li>
+            <li><a href="#">国际机票预订</a></li>
+            <li><a href="#">国际酒店预订</a></li>
+            <li><a href="#">格林豪泰连锁酒店</a></li>
+        </ul>
+    </div>
+    <div class="fix">
+        <ul class="tishi">
+            <li class="liactive">游轮特卖</li>
+            <li>品质精选</li>
+            <li>了解游轮</li>
+            <li>游轮攻略</li>
+            <li>同城游轮</li>
+        </ul>
+    </div>
+</body>
+
+</html>

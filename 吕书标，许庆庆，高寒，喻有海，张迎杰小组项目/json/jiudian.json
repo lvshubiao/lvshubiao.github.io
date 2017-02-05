@@ -1,0 +1,193 @@
+{
+  "resultCode":"0000",
+  "slides": [
+    {
+      "img": "../images/img2/JD-slide1.jpg"
+    },
+    {
+      "img": "../images/img2/JD-slide2.jpg"
+    },
+    {
+      "img": "../images/img2/JD-slide3.jpg"
+    },
+    {
+      "img": "../images/img2/JD-slide4.jpg"
+    }
+
+  ],
+  "hotHotel": [
+    [
+      {"img":"../images/img2/bj1.jpg","title":"北京万达索菲特大饭店","price":"888","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/bj2.jpg","title":"北京万达索菲特大饭店","price":"248","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/bj3.jpg","title":"北京万达索菲特大饭店","price":"728","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/bj4.jpg","title":"北京万达索菲特大饭店","price":"499","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/bj5.jpg","title":"北京万达索菲特大饭店","price":"368","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/bj6.jpg","title":"北京万达索菲特大饭店","price":"318","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ],
+      [
+      {"img":"../images/img2/shanghai.jpg","title":"上海宏达山庄","price":"123","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sh2.jpg","title":"上海宏达山庄","price":"234","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sh3.jpg","title":"上海宏达山庄","price":"32345","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sh4.jpg","title":"上海宏达山庄","price":"5645","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sh5.jpg","title":"上海宏达山庄","price":"4545","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sh6.jpg","title":"上海宏达山庄","price":"34234","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ],
+        [
+      {"img":"../images/img2/sz1.jpg","title":"深圳湾木棉花酒店","price":"188","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sz2.png","title":"深圳湾木棉花酒店","price":"288","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sz3.jpg","title":"深圳湾木棉花酒店","price":"388","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sz4.jpg","title":"深圳湾木棉花酒店","price":"488","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sz5.jpg","title":"深圳湾木棉花酒店","price":"588","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/sz6.jpg","title":"深圳湾木棉花酒店","price":"699","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ],
+          [
+      {"img":"../images/img2/suz1.jpg","title":"苏州独墅湖世尊酒店","price":"299","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/suz2.jpg","title":"苏州独墅湖世尊酒店","price":"399","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/suz3.jpg","title":"苏州独墅湖世尊酒店","price":"499","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/suz4.jpg","title":"苏州独墅湖世尊酒店","price":"599","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/suz5.jpg","title":"苏州独墅湖世尊酒店","price":"699","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/szhou6.jpg","title":"苏州独墅湖世尊酒店","price":"799","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ],
+           [
+      {"img":"../images/img2/gz1.jpg","title":"广州长隆酒店","price":"899","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/gz2.jpg","title":"广州长隆酒店","price":"999","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/gz3.jpg","title":"广州长隆酒店","price":"1699","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/gz4.jpg","title":"广州长隆酒店","price":"2699","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/gz5.jpg","title":"广州长隆酒店","price":"3699","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/gz6.jpg","title":"广州长隆酒店","price":"4699","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ],
+             [
+      {"img":"../images/img2/hz1.jpg","title":"杭州三立开元名都大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/hz2.jpg","title":"杭州三立开元名都大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/hz3.jpg","title":"杭州三立开元名都大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/hz4.jpg","title":"杭州三立开元名都大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/hz5.jpg","title":"杭州三立开元名都大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/hz6.jpg","title":"杭州三立开元名都大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ],
+             [
+      {"img":"../images/img2/cd1.jpg","title":"成都泰合索菲特大饭店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/cd2.jpg","title":"成都泰合索菲特大饭店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/cd3.jpg","title":"成都泰合索菲特大饭店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/cd4.jpg","title":"成都泰合索菲特大饭店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/cd5.jpg","title":"成都泰合索菲特大饭店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/cd6.jpg","title":"成都泰合索菲特大饭店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ],
+             [
+      {"img":"../images/img2/wh1.jpg","title":"武汉兆瑞国际大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/wh2.jpg","title":"武汉兆瑞国际大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/wh3.jpg","title":"武汉兆瑞国际大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/wh4.jpg","title":"武汉兆瑞国际大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/wh5.jpg","title":"武汉兆瑞国际大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"},
+      {"img":"../images/img2/wh6.jpg","title":"武汉兆瑞国际大酒店","desc":"【国贸地区】建国路93号万达广场C座近Soho现代城"}
+    ]
+  ],
+  "sortHotel":[
+    [{
+      "bourn":"北京","ruin":"2017-1-20","chuout":"2017-1-21"
+    }],
+    [{
+      "bourn":"曼谷","ruin":"2017-1-26","chuout":"2017-1-27"
+    }],
+    [{
+      "bourn":"香港","ruin":"2017-1-28","chuout":"2017-1-29"
+    }]
+  ],
+  "cooperScroll":[
+    [
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"}
+    ],
+    [
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"}
+    ],
+    [
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"}
+    ],
+    [
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"}
+    ],
+    [
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"}
+    ],
+    [
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"},
+      {"img":"../images/img2/pp(6).jpg"}
+    ]
+    
+  ],
+  "onlyTheme":[
+    [
+        {"img":"../images/img2/z1(2).jpg","title":"大连","desc":"浪漫的建筑，浪漫的大海，一座建在花园里的城市"},
+        {"img":"../images/img2/z1(3).jpg","title":"厦门","desc":"学生喜爱的文艺聚集地"},
+        {"img":"../images/img2/z1(4).jpg","title":"青岛","desc":"落日余晖中的老城老街，异国风情"},
+        {"img":"../images/img2/z1(5).jpg","title":"烟台","desc":"原来这里有蓬莱，是否八仙已过海？"}
+      ],
+   
+      [
+        {"img":"../images/img2/z2(2).jpg","title":"北京","desc":"浪漫的建筑，浪漫的大海，一座建在花园里的城市"},
+        {"img":"../images/img2/z2(3).jpg","title":"杭州","desc":"学生喜爱的文艺聚集地"},
+        {"img":"../images/img2/z2(4).jpg","title":"广州","desc":"落日余晖中的老城老街，异国风情"},
+        {"img":"../images/img2/z2(5).jpg","title":"西安","desc":"原来这里有蓬莱，是否八仙已过海？"}
+      ],
+    
+      [
+       {"img":"../images/img2/z3(2).jpg","title":"大连","desc":"浪漫的建筑，浪漫的大海，一座建在花园里的城市"},
+        {"img":"../images/img2/z3(3).jpg","title":"厦门","desc":"学生喜爱的文艺聚集地"},
+        {"img":"../images/img2/z3(4).jpg","title":"青岛","desc":"落日余晖中的老城老街，异国风情"},
+        {"img":"../images/img2/z3(5).jpg","title":"烟台","desc":"原来这里有蓬莱，是否八仙已过海？"}
+      ],
+    
+      [
+        {"img":"../images/img2/z4(2).jpg","title":"大连","desc":"浪漫的建筑，浪漫的大海，一座建在花园里的城市"},
+        {"img":"../images/img2/z4(3).jpg","title":"厦门","desc":"学生喜爱的文艺聚集地"},
+        {"img":"../images/img2/z4(4).jpg","title":"青岛","desc":"落日余晖中的老城老街，异国风情"},
+        {"img":"../images/img2/z4(5).jpg","title":"烟台","desc":"原来这里有蓬莱，是否八仙已过海？"}
+      ],
+      
+     [
+        {"img":"../images/img2/z5(2).jpg","title":"大连","desc":"浪漫的建筑，浪漫的大海，一座建在花园里的城市"},
+        {"img":"../images/img2/z5(3).jpg","title":"厦门","desc":"学生喜爱的文艺聚集地"},
+        {"img":"../images/img2/z5(4).jpg","title":"青岛","desc":"落日余晖中的老城老街，异国风情"},
+        {"img":"../images/img2/z5(5).jpg","title":"烟台","desc":"原来这里有蓬莱，是否八仙已过海？"}
+      ]
+
+  ],
+  "themeImg":[
+    {"img":"../images/img2/z1(1).jpg","city":"【三亚】","desc":"海浪从远处嬉笑奔跑而来，卷起层层浪花。聆听的大海有节奏的呼吸，喝上一口清甜的椰子汁，就这样面朝大海春暖花开"},
+    {"img":"../images/img2/z2(1).jpg","city":"【成都】","desc":"麻辣的火锅、筋道的担担面、浓香的回锅肉……泡一杯蒙顶甘露，摆个龙门阵，品尝地道美食，体验成都人慵懒的生活态度"},
+    {"img":"../images/img2/z3(1).jpg","city":"【三亚】","desc":"海浪从远处嬉笑奔跑而来，卷起层层浪花。聆听的大海有节奏的呼吸，喝上一口清甜的椰子汁，就这样面朝大海春暖花开"},
+    {"img":"../images/img2/z4(1).jpg","city":"【三亚】","desc":"海浪从远处嬉笑奔跑而来，卷起层层浪花。聆听的大海有节奏的呼吸，喝上一口清甜的椰子汁，就这样面朝大海春暖花开"},
+    {"img":"../images/img2/z5(1).jpg","city":"【三亚】","desc":"海浪从远处嬉笑奔跑而来，卷起层层浪花。聆听的大海有节奏的呼吸，喝上一口清甜的椰子汁，就这样面朝大海春暖花开"}
+  ]
+  
+  
+}
+

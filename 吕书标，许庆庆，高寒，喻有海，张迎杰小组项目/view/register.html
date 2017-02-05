@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+	<header class="z-header clearfix">
+		<a href="javascript:;">
+			<img src="../images/regiterImages/reg.png" alt="">
+		</a>
+		<div class="welcome">
+			<h2>欢迎注册</h2>
+		</div>
+		<div class="login_entry">
+			<p>
+				已有同程账号？
+				<a href="javascript:;">登录</a>
+			</p>
+		</div>
+	</header>
+	<container class="z-container">
+		<div class="panel">
+			<div class="panel_top"></div>
+			<div class="panel_middle step1">
+				<ul class="step_name clearfix">
+					<li class="step_name_1">填写注册信息</li>
+					<li class="step_name_2">接受并填写验证码</li>
+					<li class="step_name_3">注册成功</li>
+				</ul>
+				<div class="step_cont_1 clearfix">
+					<div class="register_wrapper">
+						<form action="" name="registerStep1">
+							<p class="register_info_line" id="telline">
+								<label class="label">
+									<span class="requied_symbol">*</span>手机号码
+								</label>
+								<input type="text" class="input invalid" id="mobileNum" maxlength="11" name="mobileNum" value>
+								<em></em>
+								<span class="invalid_message" style="display:none;">手机号码格式不正确，请重新输入</span>
+							</p>
+							<p class="register_info_line c_two_register_info_line" style="margin-bottom: 0" id="pwdO">
+								<label for="pwdOnce" class="label">
+									<span class="requied_symbol">*</span>登录密码
+								</label>
+								<input type="password" name="pwdOnce" maxlength="18" id="pwdOnce" class="input">
+								<em></em>
+								<span class="invalid_message" style="display: none;">6-18位，区分大小写,字母、数字、特殊符号中的两种或两种以上</span>
+							</p>
+							<ul class="password_strength clearfix">
+							    <span>安全程度:</span>
+								<li><p>弱</p></li>
+								<li><p>中</p></li>
+								<li><p>强</p></li>
+							</ul>
+							<p class="register_info_line c_two_register_second_info_line" id="pwdT">
+								<label for="" class="label">
+									<span class="requied_symbol">*</span>确认密码
+								</label>
+								<input type="password" name="pwdOnce" maxlength="18" id="pwdTwice" class="input invalid">
+								<em></em>
+								<span class="invalid_message" style="display: none;">两次输入的密码不一致，请重新输入</span>
+							</p>
+							<p class="register_info_line" id="vCode">
+								<label for="" class="label">
+									<span class="requied_symbol">*</span>图形验证码
+								</label>
+								<input type="text" class="text-box input verif_code" maxlength="6" value name="verifCode" id="verifCode">
+								<img src="../images/regiterImages/getcap.jpg" class="verif_code_img" alt="" title="点击刷新验证码">
+								<span>
+									<span class="change_verif_code_img">换一张</span>
+								</span>
+								<span class="invalid_message" style="display: none">请输入验证码</span>
+							</p>
+							<p class="register_info_line has_co_brand_card_line">
+								<em></em>
+								<span class="prompt">我有同程旅游合作联名卡</span>
+							</p>
+							<p class="register_info_line has_read_and_agree_line">
+								<em class="gou"></em>
+								<span class="has_read">我已阅读并同意 <a href="javascript:;">《同程旅游服务条款》</a></span>
+								<span class="prompt"></span>
+							</p>
+							<p class="register_info_line register_submit_btn_wrapper">
+								<a href="javascript:;" class="register_submit_btn">同意服务条款并注册</a>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="panel_bottom"></div>
+		</div>
+	</container>
+	<footer class="z-footer">
+		Copyright © 2002-2017 版权所有 同程网络科技股份有限公司<a href="javascript:;" class="icp_num">苏ICP证B2-20100204</a>
+	</footer>
+	<script src="../js/jquery/dist/jquery.min.js"></script>
+	<script src="../js/register.js"></script>
+</body>
+</html>

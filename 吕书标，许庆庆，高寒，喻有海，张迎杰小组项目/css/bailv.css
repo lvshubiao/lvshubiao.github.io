@@ -1,0 +1,636 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-size: 12px;
+}
+img {
+    display: block;
+}
+
+.clear:after {
+    content: "";
+    height: 0px;
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+
+.top {
+    width: 100%;
+    background: url(../images/bailvimg/topbg.jpg) top center no-repeat;
+}
+
+.top>div {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top1 {
+    height: 211px;
+    background: url(../images/bailvimg/banner1.jpg) no-repeat;
+}
+
+.top2 {
+    height: 210px;
+    background: url(../images/bailvimg/banner2.jpg) no-repeat;
+}
+
+.top3 {
+    height: 210px;
+    padding-top: 46px;
+    background: url(../images/bailvimg/banner3.jpg) no-repeat;
+}
+
+.joinBtn {
+    position: absolute;
+    top: 46px;
+    left: 380px;
+    width: 335px;
+    height: 72px;
+    background: url(../images/bailvimg/joinBtn.png) no-repeat;
+    cursor: pointer;
+}
+
+.top3>label {
+    position: absolute;
+    bottom: 28px;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+    right: 20px;
+}
+
+.top3>label>a {
+    margin-left: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #eebf5f;
+    line-height: 32px;
+    color: #eebf5f;
+}
+
+.y-end {
+    margin-top: 0;
+}
+
+.showwhat {
+    border-bottom: 1px solid #eebf5f;
+    color: #eebf5f;
+}
+
+.chunwanBox {
+    width: 100%;
+    background: url(../images/bailvimg/chuwanbg.jpg) top center no-repeat;
+}
+
+.chunwan {
+    width: 1185px;
+    height: 570px;
+    margin: 0 auto;
+    background: #ba1833;
+    border: 3px solid #ebb76c;
+    overflow: hidden;
+}
+
+.cw_left {
+    float: left;
+}
+
+.cw_right {
+    float: left;
+    margin-left: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 54px;
+    color: #fef3b4;
+    width: 863px;
+}
+
+.video_in {
+    position: relative;
+    width: 566px;
+    height: 254px;
+    float: left;
+    cursor: pointer;
+}
+
+.video_in .play {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bailvimg/play1.png) center center no-repeat;
+    z-index: 4;
+}
+.videoimg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.video_wrap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.video_wrap>video{
+    width: 100%;
+    height: 100%;
+}
+.mask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 4;
+}
+
+.videolistBox {
+    height: 253px;
+    float: left;
+    background: #e3c975;
+}
+
+#videoList {
+    width: 265px;
+    height: 228px;
+    font-size: 14px;
+}
+
+.msp_container {
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+}
+
+#videoList ul {
+    float: left;
+    cursor: pointer;
+    background: #e3c975;
+    border-radius: 0px;
+}
+
+#videoList ul>li {
+    line-height: 30px;
+}
+
+.imgList>li {
+    float: left;
+    padding-right:15px;
+}
+
+.ulbox {
+    position: relative;
+    height: 175px;
+    overflow: hidden;
+    width: 829px;
+}
+
+.ulbox>span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    z-index: 20;
+    top: 30%;
+    cursor: pointer;
+}
+
+.toRight {
+    right: 0px;
+    
+}
+
+.toLeft {
+    left: 0px;
+}
+
+.imgList {
+    position: absolute;
+    left: 0px;
+    width: 3000px;
+    height: 175px;
+}
+
+.imgList>li>a {
+    display: block;
+    width: 196px;
+}
+
+.videoBox {
+    overflow: hidden;
+}
+
+.imgList img {
+    width: 196px;
+    height: 132px;
+}
+
+.info {
+    font-size: 14px;
+    color: #333;
+    padding: 7px 8px 0;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: white;
+}
+
+.divE {
+    margin-left: 15px;
+}
+
+.contentBox {
+    width: 100%;
+    background: url(../images/bailvimg/bg.jpg) repeat-y top center;
+}
+
+.content {
+    width: 1191px;
+    margin: 0 auto;
+    background: url(../images/bailvimg/bg_in.jpg) repeat-y;
+    padding: 28px 0;
+}
+
+.yearTrip {
+    width: 1185px;
+    height: 499px;
+    border: 3px solid #ebb76c;
+    background: #ba1833;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.yearTrip>img {
+    float: left;
+}
+
+.listContent {
+    padding: 0 7px 0 22px;
+    float: right;
+}
+
+.listContent h1 {
+    padding-bottom: 10px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    color: #f9d995;
+}
+
+.codeSlideWrapper {
+    position: relative;
+    height: 186px;
+}
+
+.codeContent {
+    width: 850px;
+}
+
+.qa_main>p>strong {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+.gg {
+    width: 198px;
+    height: 131px;
+}
+
+.gg-text {
+    width: 100%;
+    padding: 7px 0px 7px 7px;
+    background: white;
+    color: #333;
+    line-height: 18px;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 50px;
+}
+.music{
+    width: 100%;
+    height: 100%;
+    background: url(../images/bailvimg/playIcon.png) 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.codeList>li {
+    width: 198px;
+    float: left;
+    margin-right: 11px;
+    position: relative;
+}
+
+.divmask {
+    position: relative;
+    overflow: hidden;
+}
+
+.zhezhao {
+    width: 198px;
+    height: 131px;
+    position: absolute;
+    top: 131px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.zhezhao>img {
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    margin: 25.5px auto 0;
+}
+
+.codeList>li>a {
+    width: 198px;
+}
+
+.msk {
+    width: 198px;
+    height: 131px;
+    background: url(../images/bailvimg/playIcon.png) 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.part {
+    width: 1200px;
+    position: relative;
+    background-color: #ba1833;
+    background: url(../images/bailvimg/bg.jpg) repeat-y top center;
+    padding: 30px;
+    border: 3px #ebb76c solid;
+    margin: 120px auto 0;
+    background: #ba1833;
+    height: 1120px;
+}
+
+.part_flag {
+    width: 710px;
+    height: 111px;
+    background: url(../images/bailvimg/icon_all.png) no-repeat;
+    background-size: 1197px 136px;
+    background-position: -128px 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -329px;
+    line-height: 124px;
+    top: -60px;
+}
+
+.part_flag>span {
+    position: absolute;
+    left: 20px;
+    left: 210px;
+    color: #ca1840;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.part_left {
+    width: 520px;
+    float: left;
+}
+
+.part_right {
+    width: 530px;
+    float: right;
+}
+
+.part_title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f3cf73;
+    border-bottom: 2px #db8355 solid;
+    line-height: 34px;
+}
+
+.activity_list>li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.activity_list>li:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.activity_list>li>img {
+    width: 244px;
+    height: 174px;
+}
+
+.activity_tit {
+    width: 250px;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    font-size: 14px;
+    padding-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon_adress {
+    display: inline-block;
+    padding: 0px 15px;
+    background: url(../images/bailvimg/adress_left.jpg) no-repeat 0 0 #f1ca6b;
+    margin: 0 7px 3px;
+    text-align: center;
+    line-height: 27px;
+    font-size: 16px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.icon_adress i {
+    display: block;
+    width: 11px;
+    height: 27px;
+    background: url(../images/bailvimg/adress_right.jpg) no-repeat 0 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.border {
+    border: 3px #c98739 solid;
+    width: 250px;
+    height: 180px;
+}
+
+.border img {
+    width: 244px;
+    height: 174px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    height: 940px;
+    background: white;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.strmove {
+    position: absolute;
+}
+
+.strmove>li {
+    height: 94px;
+    font-size: 30px;
+}
+
+.strmove>li>h4 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d49a46;
+}
+
+.strmove>li>h4 >img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    float: left;
+}
+
+.strmove>li>p {
+    height: 64px;
+    width: 100%;
+    color: #999;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.strmove>li {
+    width: 465px;
+}
+
+.part1 {
+    height: 490px;
+}
+
+.superVip {
+    width: 254px;
+    float: left;
+    margin: 0 0 0 58px;
+    text-align: center;
+}
+
+.superVip img {
+    width: 239px;
+    height: 327px;
+    margin: 0 auto;
+}
+
+.superVip h1 {
+    color: #ffe89c;
+    padding-top: 14px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.superVip p {
+    color: #fccc58;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.vipList {
+    margin-left: 355px;
+}
+
+.vipList li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.vipList li>img {
+    display: inline-block;
+}
+
+.vipList li h1 {
+    color: #ffe89c;
+    padding-top: 14px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.vipList li p {
+    color: #fccc58;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.zixun {
+    height: 170px;
+    width: 1200px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.icon_service {
+    background: url(../images/bailvimg/icon_service.jpg) 0 0 no-repeat;
+    float: left;
+    width: 269px;
+    height: 157px;
+}
+
+.qa_main {
+    float: left;
+    width: 925px;
+    height: 164px;
+    background: #e13656;
+    padding-top: 30px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.qa_main p {
+    width: 580px;
+    font-size: 24px;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.qa_more {
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    margin-top: -63px;
+    cursor: pointer;
+    background: url(../images/bailvimg/icon_more.png) 0 0 no-repeat;
+}

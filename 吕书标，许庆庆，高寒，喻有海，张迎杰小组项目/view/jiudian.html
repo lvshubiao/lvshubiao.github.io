@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/jiudian.css">
+</head>
+
+<body>
+    <script src="../js/jquery/dist/jquery.min.js"></script>
+    <script src="../js/jiudian.js"></script>
+    <script src="../js/underscore/underscore.js"></script>
+    <!-- 头部 -->
+    <div class="l-top">
+        <div class="container clearfix">
+            <div class="l-top-left">
+                <span>您好，欢迎使用LY.com访问同程！</span>
+                <a href="login.html" class="login">登录</a>
+                <a href="register.html" class="reg">注册</a>
+                <a href="#" style="margin: 2px 0 0 8px;height: 22px;"><img src="../images/images1/dnRKSH.gif" alt=""></a>
+            </div>
+            <ul class="l-top-right">
+                <li>
+                    <a href="#">我的同程<span></span></a>
+                    <div class="l-hide l-div1">
+                        <div class="l-hello">
+                            <span>你好,<a href="">请登录</a></span>
+                        </div>
+                        <ul class="l-list clearfix">
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的信息</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">会员中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><i class="l-phone"></i>手机同程<span></span></a>
+                    <div class="l-hide l-div2">
+                        <a href="#"><img src="../images/images1/Mb5JnI.png" alt=""></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">微信<span></span></a>
+                    <div class="l-hide l-div3">
+                        <a href="#"></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">电话<span></span></a>
+                    <div class="l-hide l-div4">
+                        <p>国内电话:4007-777-777</p>
+                        <p>海外电话:+86-512-8220-9000</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">客户服务<span></span></a>
+                    <ul class="l-hide l-div5">
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">人工申诉</a></li>
+                        <li><a href="#">包团定制</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="l-logo container clearfix">
+        <div class="l-logo-left">
+            <a href="#">
+                <img src="../images/images1/gQ4fcp.png" alt="">
+            </a>
+        </div>
+        <div class="l-logo-right">
+            <a href="#"><img src="../images/images1/hTBLcH.png" alt=""></a>
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="l-nav">
+        <ul class="l-nav-list container clearfix">
+            <li><a href="../homePage.html">首页</a></li>
+            <li class="active"><a href="jiudian.html">酒店</a></li>
+            <li><a href="index.html">机票</a></li>
+            
+            <li><a href="busTicket.html">汽车票</a></li>
+            
+            <li><a href="travelAround.html">周边游</a><span class="l-hot">Hot</span></li>
+            
+            <li><a href="chujing.html">出境游</a></li>
+            <li><a href="youlun.html">游轮</a></li>
+           
+            <li><a href="DZLY.html">定制旅游</a></li>
+            <li><a href="bank.html">金融</a></li>
+            
+            <li><a href="bailv.html">百旅会</a><span class="l-hot">中老年</span></li>
+        </ul>
+    </div>
+    <div class="g-main-slider">
+        <!-- 头部幻灯片 -->
+        <ul class="g-slider">
+            <li><img src="../images/img2/JD-slide1.jpg" alt=""></li>
+            <li><img src="../images/img2/JD-slide2.jpg" alt=""></li>
+            <li><img src="../images/img2/JD-slide3.jpg" alt=""></li>
+            <li><img src="../images/img2/JD-slide4.jpg" alt=""></li>
+        </ul>
+        <ul class="g-slider-nav clear">
+            <li class="current"><a href="#" title="">1</a></li>
+            <li><a href="#" title="">2</a></li>
+            <li><a href="#" title="">3</a></li>
+            <li><a href="#" title="">4</a></li>
+        </ul>
+        <!-- 搜索模块 -->
+        <div class="g-search-wrap">
+            <div class="g-search-box">
+                <div class="g-search-tab clear">
+                    <div class="home active">国内酒店</div>
+                    <div class="internation">国际酒店</div>
+                    <div class="gangaotai">港澳台酒店</div>
+                </div>
+                <div id="sortHotel">
+                    
+                </div>
+                <script type="text/html" id="sortHotelTemplate">
+                   ##for(var i = 0;i<list11.length;i++){##
+                    ## var obj = list11[i];##
+                <div class="tab-con">
+                    <dl class="destination clear">
+                        <dt>目的地</dt>
+                        <dd>
+                            <input id="hotelCity" type="text" value="{{obj.bourn}}">
+                        </dd>
+                    </dl>
+                    <dl class="destination clear">
+                        <div id="des-left">
+                            <dt>入住</dt>
+                            <dd>
+                                <!-- <input id="comedate" type="text" value="2016-07-12"> -->
+                                <input type="date" id="comedate" value="{{obj.ruin}}" placeholder="周五">
+                            </dd>
+                        </div>
+                        <div id="des-right">
+                            <dt>离店</dt>
+                            <dd>
+                                <input type="date" id="leavedate" type="text" value="{{obj.chuout}}" placeholder="周六">
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl class="destination clear">
+                        <dt>关键字</dt>
+                        <dd>
+                            <input id="keyword" type="text" placeholder="输入 位置 酒店名 或品牌">
+                        </dd>
+                    </dl>
+                    <div class="search-btn">
+                        <div class="submit-box">
+                            <span id="search-submit">搜索</span>
+                        </div>
+                        <div class="map-box">
+                            <span id="map-search">地图搜索</span>
+                        </div>
+                    </div>
+                </div>      
+                    ##}##
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- 浏览记录模块 -->
+    <div class="g-record">
+        <div class="con-record">
+            <h1>浏览记录
+               
+            </h1>
+            <div class="norecord">暂无记录，快去挑选心仪的酒店吧~</div>
+            <div class="icon-nav">
+                 <span class="check">
+                    <i></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 热门酒店 -->
+    <div class="g-hot-hotel">
+        <div class="title">热门酒店</div>
+        <ul class="tab">
+            <li class="active">北京</li>
+            <li>上海</li>
+            <li>深圳</li>
+            <li>苏州</li>
+            <li>广州</li>
+            <li>杭州</li>
+            <li>成都</li>
+            <li>武汉</li>
+        </ul>
+        <div class="g-hotellis">
+            <ul id="hotList">
+                
+               
+            </ul>
+            <script type="text/html" id="hotTemplate">
+                ##for(var i = 0;i<list.length;i++){##
+                    ## var obj = list[i];##
+
+                    <li>
+                    <a href="#" title="">
+                        <img src="{{obj.img}}" alt="">
+                    </a>
+                    <div class="desc">
+                        <dl>
+                            <dt>
+                                {{obj.title}}
+                            </dt>
+                            <dd class="address">{{obj.desc}}</dd>
+                            <dd class="price" style="bottom: 5.01989px;"><span>¥<em>{{obj.price}}</em></span>起</dd>
+                        </dl>
+                    </div>
+                </li>
+                ##}##
+            </script>
+            <div class="more">
+                <a href="//www.ly.com/hotel/beijing53/" target="_blank">更多北京酒店 </a>
+            </div>
+        </div>
+    </div>
+    <!-- 度假主体 -->
+    <div class="g-vacation-hotel">
+        <div class="vacation-con">
+            <div class="title">独家主题</div>
+            <ul class="nav clear">
+                <li class="active">
+                    <a class="n_icons_1 n_icons"><i></i></a>
+                    <span>还在浪边</span>
+                </li>
+                <li>
+                    <a class="n_icons_2 n_icons"><i></i></a>
+                    <span>吃货福地</span>
+                </li>
+                <li>
+                    <a class="n_icons_3 n_icons"><i></i></a>
+                    <span>江南小镇</span>
+                </li>
+                <li>
+                    <a class="n_icons_4 n_icons"><i></i></a>
+                    <span>民族风情</span>
+                </li>
+                <li>
+                    <a class="n_icons_5 n_icons"><i></i></a>
+                    <span>登山探险</span>
+                </li>
+            </ul>
+            <ul class="themecon">
+                <li>
+                    <div class="holidaycon">
+                        <div class="leftcon">
+                            <a href="#" target="_blank">
+                                <img src="../images/img2/z1(1).jpg">
+                                <span class="city">三亚</span>
+                                <div class="desc">
+                                    <i class="n-center-icon1 n-center-icon"></i>
+                                    <div class="info">
+                                        海浪从远处嬉笑奔跑而来，卷起层层的浪花。聆听着大海有节奏的呼吸，喝上一口清甜的椰子汁，就这样面朝大海，春暖花开
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rightcon" id="themeList">
+                        </div>
+                        <script type="text/html" id="onlyThemeTemplate">
+                             ##for(var i = 0;i<list.length;i++){##
+                                  ##var o = list[i];##
+                                    <div class="r-top">
+                                        <a href="#" target="_blank">
+                                            <img src="{{o.img}}">
+                                            <div class="citydes"><span>{{o.title}}</span> {{o.desc}}</div>
+                                        </a>
+                                    </div>
+                                  ##}##
+                        </script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- cooperative brand 合作品牌 -->
+    <div class="g-cooperative">
+        <div class="cooperative-con">
+            <div class="title">合作品牌</div>
+            <div class="brand-list clear" id="brand-list">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="../images/img2/pp(1).jpg">
+                            <div class="mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="../images/img2/pp(2).jpg">
+                            <div class="mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="../images/img2/pp(3).jpg">
+                            <div class="mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="../images/img2/pp(4).jpg">
+                            <div class="mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="../images/img2/pp(6) (1).jpg">
+                            <div class="mask"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="../images/img2/pp(10).jpg">
+                            <div class="mask"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btns">
+                    <span class="btn-prev" id="btn-prev"></span>
+                    <span class="btn-next" id="btn-next"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 品质保证开始 -->
+        <div class="qulity-box">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="icon icon1"></div>
+                    </a>
+                    全球50万家酒店
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="icon icon2"></div>
+                    </a>
+                    专属客服服务
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="icon icon3"></div>
+                    </a>
+                    发票国内免邮
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="icon icon4"></div>
+                    </a>
+                    取消险退订保障
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <ul class="footer container clearfix">
+            <li>
+                <div class="clearfix">
+                    <div class="l-idea"></div>
+                    <span class="l-idea-desc">意见反馈</span>
+                </div>
+                <div class="clearfix l-tel24">
+                    <div></div>
+                    <p>24小时服务热线</p>
+                    <p>4007-777-777</p>
+                </div>
+            </li>
+            <!-- 关于同程 -->
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>关于同程</h2>
+                    </li>
+                    <li><a href="#">同程简介</a></li>
+                    <li><a href="#">可信网站</a></li>
+                    <li><a href="#">法律声明</a></li>
+                    <li><a href="#">网站地图</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>加盟合作</h2>
+                    </li>
+                    <li><a href="#">商务合作</a></li>
+                    <li><a href="#">网站加盟</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">业务资质</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>联系我们</h2>
+                    </li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">投诉建议</a></li>
+                    <li><a href="#">诚聘英才</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>同程旗下网站</h2>
+                    </li>
+                    <li>
+                        <a href="#" class="tcWebCn"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="tcWebCom"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="tcWebNet"></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="l-tcAboat">
+                    <li>
+                        <h2>同程旅游app</h2>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/images1/QPSAEB.png" alt=""></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr class="container hr">
+        <ul class="footer-bottom container">
+            <li>服务热线：<span>4007-777-777</span></li>
+            <li>转1：已有订单处理</li>
+            <li>
+                转2：预订 机票转<span>1</span>景点/玩乐/电影票转<span>2</span>酒店转<span>3</span>周边游转<span>4</span> 周边游转
+                <span>5</span>周边游转<span>6</span></li>
+            <li> 转3：预订 机票转<span>1</span>景点/玩乐/电影票转<span>2</span>酒店转<span>3</span>周边游转<span>4</span></li>
+        </ul>
+    </footer>
+    <div class="l-outer">
+        <ul class="l-friendAnchor container">
+            <li>
+                <h2>友情链接:</h2></li>
+            <li><a href="#">酒店门票预订</a></li>
+            <li><a href="#">国际机票预订</a></li>
+            <li><a href="#">国际酒店预订</a></li>
+            <li><a href="#">格林豪泰连锁酒店</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

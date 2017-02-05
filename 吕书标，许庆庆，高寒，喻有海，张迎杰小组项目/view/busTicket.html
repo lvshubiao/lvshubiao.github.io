@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>汽车票预订</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+	<link rel="stylesheet" type="text/css" href="../css/busTicket.css">
+</head>
+<body>
+ <!-- 头部 -->
+    <div class="l-top">
+        <div class="container clearfix">
+            <div class="l-top-left">
+                <span>您好，欢迎使用LY.com访问同程！</span>
+                <a href="login.html" class="login">登录</a>
+                <a href="register.html" class="reg">注册</a>
+                <a href="#" style="margin: 2px 0 0 8px;height: 22px;"><img src="../images/images1/dnRKSH.gif" alt=""></a>
+            </div>
+            <ul class="l-top-right">
+                <li>
+                    <a href="#">我的同程<span></span></a>
+                    <div class="l-hide l-div1">
+                        <div class="l-hello">
+                            <span>你好,<a href="">请登录</a></span>
+                        </div>
+                        <ul class="l-list clearfix">
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的信息</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">会员中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><i class="l-phone"></i>手机同程<span></span></a>
+                    <div class="l-hide l-div2">
+                        <a href="#"><img src="../images/images1/Mb5JnI.png" alt=""></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">微信<span></span></a>
+                    <div class="l-hide l-div3">
+                        <a href="#"></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">电话<span></span></a>
+                    <div class="l-hide l-div4">
+                        <p>国内电话:4007-777-777</p>
+                        <p>海外电话:+86-512-8220-9000</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">客户服务<span></span></a>
+                    <ul class="l-hide l-div5">
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">人工申诉</a></li>
+                        <li><a href="#">包团定制</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="l-logo container clearfix">
+        <div class="l-logo-left">
+            <a href="#">
+                <img src="../images/images1/gQ4fcp.png" alt="">
+            </a>
+        </div>
+        <div class="l-logo-right">
+            <a href="#"><img src="../images/images1/hTBLcH.png" alt=""></a>
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="l-nav">
+        <ul class="l-nav-list container clearfix">
+            <li><a href="../homePage.html">首页</a></li>
+            <li><a href="jiudian.html">酒店</a></li>
+            <li><a href="index.html">机票</a></li>
+            
+            <li class="active"><a href="busTicket.html">汽车票</a></li>
+            
+            <li><a href="travelAround.html">周边游</a><span class="l-hot">Hot</span></li>
+            
+            <li><a href="chujing.html">出境游</a></li>
+            <li><a href="youlun.html">游轮</a></li>
+           
+            <li><a href="DZLY.html">定制旅游</a></li>
+            <li><a href="bank.html">金融</a></li>
+            
+            <li><a href="bailv.html">百旅会</a><span class="l-hot">中老年</span></li>
+        </ul>
+    </div>
+<!-- 头部结束 -->
+<!-- Main Start -->
+	<div class="x-main" id="x-main">
+		<div class="x-container clear">
+			<!-- Left Start -->
+			<div class="x-container-left">
+				<div class="x-left-search">
+					<h1 class="x-search-tab clear">
+							<span class="x-search-bus"></span>
+							<span class="x-search-txt">汽车票</span>
+					</h1>
+					<ul class="x-search-container">
+						<li class="x-search-from x-selectllist">
+							<span >出发城市</span>
+							<input id="x-search-fromcity" class="x-search-frominput " type="text" name="" value="" placeholder="中文/拼音/简拼">
+						</li>
+						<li class="x-search-data x-selectllist">
+							<span >到达城市</span>
+							<input id="x-search-tocity" class="x-search-frominput" type="text" name="" value="" placeholder="中文/拼音/简拼">
+						</li>
+						<li class="x-search-from x-selectllist">
+							<span >出发日期</span>
+							<input onclick="laydate()" id="x-search-data" class="x-search-frominput " type="text" name="" value="" placeholder="2016-06-08">
+						</li>
+						<li class="x-button">搜索</li>
+					</ul>
+                    <div class="x-search-hidemenu" id="x-search-hidemenu">
+                        <h3 class="x-search-hidemenumsg clear"><p>支持中文/拼音/简拼</p><span id="x-hidemenu-close"></span></h3>
+                        <ul class="x-search-hidemenuTitle clear">
+                            <li class="active3" id="x-menuhot">热门</li>
+                            <li class="" id="x-menu-ABCDE">ABCDE</li>
+                            <li class="" id="x-menu-FGHJ">FGHJ</li>
+                            <li class="" id="x-menu-KLMNP">KLMNP</li>
+                            <li class="" id="x-menu-QRST">QRST</li>
+                            <li class="" id="x-menu-WXYZ">WXTZ</li>
+                        </ul>
+                        <div class="x-search-hcBox" id="">
+                            <div class="x-search-hidemenuCity x-menuhot clear" >
+                                <span>苏州</span>
+                                <span>无锡</span>
+                                <span>上海</span>
+                                <span>北京</span>
+                                <span>泰州</span>
+                                <span>广州</span>
+                                <span>盐城</span>
+                                <span>常熟</span>
+                                <span>深圳</span>
+                                <span>徐州</span>
+                                <span>南京</span>
+                                <span>杭州</span>
+                                <span>常州</span>
+                                <span>镇江</span>
+                                <span>西安</span>
+                                <span>成都</span>
+                                <span>重庆</span>
+                                <span>南通</span>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-ABCDE clear" >
+                                <p class="letter">A</p>
+                                <section class="clear">
+                                    <span>安庆</span>
+                                    <span>安阳</span>
+                                    <span>阿巴嘎旗</span>
+                                    <span>阿克塞哈哈哈</span>
+                                    <span>阿拉善右旗</span>
+                                    <span>阿拉善左旗</span>
+                                    <span>阿鲁科尔沁旗</span>
+                                    <span>安吉县</span>
+                                    <span>安江镇</span>
+                                    <span>安居</span>
+                                    <span>安康</span>
+                                    <span>安龙县</span>
+                                    <span>安陆</span>
+                                    <span>安平镇</span>
+                                    <span>安丘</span>
+                                    <span>安仁县</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-ABCDE clear">
+                                <p class="letter">B</p>
+                                <section class="clear">
+                                    <span>北京</span>
+                                    <span>保定</span>
+                                    <span>滨海县</span>
+                                    <span>北海</span>
+                                    <span>百色</span>
+                                    <span>滨州</span>
+                                    <span>巴东县</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-ABCDE clear">
+                                <p class="letter">C</p>
+                                <section class="clear">
+                                    <span>常州</span>
+                                    <span>常熟</span>
+                                    <span>重庆</span>
+                                    <span>长沙</span>
+                                    <span>蔡家坡镇</span>
+                                    <span>长白山</span>
+                                    <span>昌江黎族自治县</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-ABCDE clear">
+                               <p class="letter">D</p>
+                                <section class="clear">
+                                    <span>东莞</span>
+                                    <span>大连</span>
+                                    <span>大丰</span>
+                                    <span>大足石刻</span>
+                                    <span>丹山镇</span>
+                                    <span>丹棱县</span>
+                                    <span>大理市区</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-ABCDE clear">
+                               <p class="letter">E</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-FGHJ clear">
+                               <p class="letter">F</p>
+                                <section class="clear">
+                                    <span>福州</span>
+                                    <span>佛山</span>
+                                    <span>丰县</span>
+                                    <span>阜阳</span>
+                                    <span>阜宁县</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-FGHJ clear">
+                               <p class="letter">G</p>
+                                <section class="clear">
+                                    <span>广州</span>
+                                    <span>贵阳</span>
+                                    <span>赣州</span>
+                                    <span>桂林</span>
+                                    <span>灌云县</span>
+                                    <span>盖州</span>
+                                    <span>甘孜县</span>
+                                    <span>赣县</span>
+                                    <span>赣榆区</span>
+                                    <span>刚察县</span>
+                                    <span>港口区</span>
+                                    <span>高安</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-FGHJ clear">
+                               <p class="letter">H</p>
+                                <section class="clear">
+                                    <span>淮安</span>
+                                    <span>杭州</span>
+                                    <span>汉中怀化</span>
+                                    <span>杭州</span>
+                                    <span>淮安</span>
+                                    <span>海门</span>
+                                    <span>惠州</span>
+                                    <span>合肥</span>
+                                    <span>海口</span>
+                                    <span>哈尔滨</span>
+                                    <span>河源</span>
+                                    <span>衡阳</span>
+                                    <span>呼和浩特</span>
+                                    <span>汉寿县</span>
+                                    <span>韩城</span>
+                                    <span>汉川</span>
+                                    <span>汉阴县</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-FGHJ clear">
+                               <p class="letter">J</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-KLMNP clear">
+                               <p class="letter">K</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-KLMNP clear">
+                               <p class="letter">L</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-KLMNP clear">
+                               <p class="letter">M</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-KLMNP clear">
+                               <p class="letter">N</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-KLMNP clear">
+                               <p class="letter">P</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-QRST clear">
+                               <p class="letter">Q</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-QRST clear">
+                               <p class="letter">R</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-QRST clear">
+                               <p class="letter">S</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-QRST clear">
+                               <p class="letter">T</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-WXYZ clear">
+                               <p class="letter">W</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-WXYZ clear">
+                               <p class="letter">X</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-WXYZ clear">
+                               <p class="letter">Y</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                            <div class="x-search-hidemenuCity x-menu-WXYZ clear">
+                               <p class="letter">Z</p>
+                                <section class="clear">
+                                    <span>峨眉山</span>
+                                    <span>鄂尔多斯</span>
+                                    <span>鄂托克前旗</span>
+                                    <span>恩平</span>
+                                    <span>恩施</span>
+                                    <span>恩阳</span>
+                                    <span>二连浩特</span>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="x-left-toolbox">
+					<h3 class="x-toolbox-title">汽车票工具箱</h3>
+					<ul class="x-toolbox-search x-toolbox-list clear">
+						<li class="clear">
+							<div class="x-bussearch x-toolbox-img"></div>
+							<p class="x-bussearch-desc">公交查询</p>
+						</li>
+						<li class="x-toolbox-time clear">
+							<div class="x-timesearch x-toolbox-img"></div>
+							<p class="x-timesearch-desc">时刻表查询</p>
+						</li>
+						<li class="clear">
+							<div class="x-stationsearch x-toolbox-img"></div>
+							<p class="x-stationsearch-desc">车站查询</p>
+						</li>
+					</ul>
+					<div class="x-toolbox-buyticket clear">
+						<span class="x-buyticket-icon"></span>
+						<div class="x-buyticket-msg">
+							<h3 class="x-buyticket-title">购票攻略</h3>
+							<p class="x-buyticket-desc">一站式帮你购票无误</p>
+						</div>
+					</div>
+					<div class="x-toolbox-phonebook x-toolbox-buyticket clear">
+						<img class="x-phonebook-icon" src="../images/image5/code_0601.png" alt="同城二维码">
+						<div class="x-buyticket-msg">
+							<h3 class="x-phonebook-title">手机订票 <span>一步到位！</span></h3>
+							<p class="x-phonebook-desc">扫描下载同城旅游客户端</p>
+							<p class="x-phonebook-desc">购票更便捷</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Left End -->
+			<!-- Right Start -->
+			<div class="x-container-right">
+				<div class="x-slide">
+					<div class="x-slide-img" id="x-slide-img">
+					</div>
+                    <script type="text/html" id="slideTemplate">
+                        ##for(var i = 0;i<list.length;i++){##
+                        ##var obj=list[i];##
+                            <img src="{{obj.img}}" alt="">
+                        ##}##
+                    </script>
+					<ul class="x-slide-indicator" id="x-slide-indicator" clear">
+						<li class="active5">1</li>
+						<li class="">2</li>
+					</ul>
+				</div>
+				<div class="x-playaround">
+					<h3 class="x-playaround-title">汽车周边游<span>苏州</span></h3>
+					<div class="x-playaround-imagelist">
+                    <script type="text/html" id="playAroundImgData">
+                        ##for(var j = 0;j<list.length;j++){##
+                        ##var obj=list[j];##
+                            <li class="x-playaround-img">
+                                <img src="{{obj.img}}" alt="乌镇">
+                                <p class="x-playaround-desc">{{obj.desc}}</p>
+                                <p class="x-playaround-price"><span>￥{{obj.price}}</span>起</p>
+                            </li>
+                        ##}##
+                    </script>
+					<ul class="clear" id="x-playaround-imglist">
+					</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Right End -->
+			<!-- Container Bottom Start -->
+			<ul class="x-container-bottom clear">
+				<li class="x-conbot-list clear">
+					<span class="x-conbot-icon1 x-conbot-bg"></span>
+					<div class="x-conbot-msg">
+						<p class="x-conbot-title">品牌保障</p>
+						<p class="x-conbot-desc">提供正规的代沟服务</p>
+					</div>
+				</li>
+				<li class="x-conbot-list clear">
+					<span class="x-conbot-icon2 x-conbot-bg"></span>
+					<div class="x-conbot-msg">
+						<p class="x-conbot-title">品牌保障</p>
+						<p class="x-conbot-desc">提供正规的代沟服务</p>
+					</div>
+				</li>
+				<li class="x-conbot-list clear">
+					<span class="x-conbot-icon3 x-conbot-bg"></span>
+					<div class="x-conbot-msg">
+						<p class="x-conbot-title">品牌保障</p>
+						<p class="x-conbot-desc">提供正规的代沟服务</p>
+					</div>
+				</li>
+				<li class="x-conbot-list clear">
+					<span class="x-conbot-icon4 x-conbot-bg"></span>
+					<div class="x-conbot-msg">
+						<p class="x-conbot-title">品牌保障</p>
+						<p class="x-conbot-desc">提供正规的代沟服务</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!-- Main End -->
+<!-- footer -->
+    <footer>
+    	<ul class="footer container clearfix">
+    		<li>
+    			<div class="clearfix">
+    				<div class="l-idea"></div>
+    				<span class="l-idea-desc">意见反馈</span>
+    			</div>
+    			<div class="clearfix l-tel24">
+    				<div></div>
+    				<p>24小时服务热线</p>
+    				<p>4007-777-777</p>
+    			</div>
+    		</li>
+    		<!-- 关于同程 -->
+    		<li>
+    			<ul class="l-tcAboat">
+    				<li>
+    					<h2>关于同程</h2>
+    				</li>
+    				<li><a href="#">同程简介</a></li>
+    				<li><a href="#">可信网站</a></li>
+    				<li><a href="#">法律声明</a></li>
+    				<li><a href="#">网站地图</a></li>
+    			</ul>
+    		</li>
+    		<li>
+    			<ul class="l-tcAboat">
+    				<li>
+    					<h2>加盟合作</h2>
+    				</li>
+    				<li><a href="#">商务合作</a></li>
+    				<li><a href="#">网站加盟</a></li>
+    				<li><a href="#">友情链接</a></li>
+    				<li><a href="#">业务资质</a></li>
+    			</ul>
+    		</li>
+    		<li>
+    			<ul class="l-tcAboat">
+    				<li>
+    					<h2>联系我们</h2>
+    				</li>
+    				<li><a href="#">联系我们</a></li>
+    				<li><a href="#">投诉建议</a></li>
+    				<li><a href="#">诚聘英才</a></li>
+    			</ul>
+    		</li>
+    		<li>
+    			<ul class="l-tcAboat">
+    				<li>
+    					<h2>同程旗下网站</h2>
+    				</li>
+    				<li><a href="#" class="tcWebCn"></a></li>
+    				<li><a href="#" class="tcWebCom"></a></li>
+    				<li><a href="#" class="tcWebNet"></a></li>
+    			</ul>
+    		</li>
+    		<li>
+    			<ul class="l-tcAboat">
+    				<li>
+    					<h2>同程旅游app</h2>
+    				</li>
+    				<li><a href="#"><img src="../images/images1/QPSAEB.png" alt=""></a></li>
+    			</ul>
+    		</li>
+    	</ul>
+    	<hr class="container hr">
+		<ul class="footer-bottom container">
+			<li>服务热线：<span>4007-777-777</span></li>
+			<li>转1：已有订单处理</li>
+			<li>
+               转2：预订 机票转<span>1</span>景点/玩乐/电影票转<span>2</span>酒店转<span>3</span>周边游转<span>4</span>
+               周边游转<span>5</span>周边游转<span>6</span></li>
+			<li> 转3：预订 机票转<span>1</span>景点/玩乐/电影票转<span>2</span>酒店转<span>3</span>周边游转<span>4</span></li>
+		</ul>
+    </footer>
+<!-- 尾部结束 -->
+
+<script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../plugs/data/laydate/laydate.js"></script>
+<script src="../js/seajs/dist/sea-debug.js"></script>
+<script src="../js/underscore/underscore.js"></script>
+<script>
+    seajs.config({
+        base:'./'
+    });
+    seajs.use(['../js/busTicket.js'],function(busTicket){
+        busTicket.init();
+    });
+</script>
+</body>
+</html>
