@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    overflow: hidden;
+    display: block;
+    height: 0px;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.section1 {
+    position: relative;
+    width: 1600px;
+    height: 850px;
+    background: url(../images/section1.jpg) no-repeat;
+    .s1 {
+        position: absolute;
+        bottom: 120px;
+        opacity: 0;
+        left: 0;
+        width: 1362px;
+        height: 392px;
+    }
+    .s2 {
+        position: absolute;
+        bottom: 199px;
+        left: 0;
+        opacity: 0;
+        width: 1383px;
+        height: 377px;
+    }
+    .s3 {
+        width: 554px;
+        height: 176px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 195px;
+        margin: auto;
+        >img {
+            width: 100%;
+            height: 176px;
+        }
+    }
+    .desc {
+        text-align: left;
+        line-height: 1.8;
+        width: 590px;
+        text-align: left;
+        left: 420px;
+        top: -416px;
+        opacity: 0;
+        position: absolute;
+        line-height: 1.8;
+        color: #94a7c6;
+        font-size: 14px;
+    }
+}
+
+.section2 {
+    position: relative;
+    width: 1600px;
+    height: 850px;
+    background: url(../images/section2.jpg) no-repeat;
+    .s2-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        bottom: -325px;
+        width: 819px;
+        height: 325px;
+        margin: auto;
+    }
+    .s2-img-2 {
+        position: absolute;
+        opacity: 0;
+        width: 233px;
+        height: 250px;
+        left: -65px;
+        bottom: 0;
+    }
+    .s2-img-3 {
+        position: absolute;
+        opacity: 0;
+        width: 211px;
+        height: 299px;
+        right: -149px;
+        bottom: 70px;
+    }
+    .easy {
+        font-size: 24px;
+        color: #748a9e;
+        position: absolute;
+        top: 125px;
+        left: 420px;
+        font-weight: 500;
+        >span {
+            color: #748a9e;
+            font-size: 24px;
+            display: inline-block;
+            width: 5px;
+            height: 46px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: 500;
+        }
+    }
+    .s2-title {
+        width: 512px;
+        height: 45px;
+        opacity: 0;
+        position: absolute;
+        left: 420px;
+        top: 168px;
+    }
+    .desc {
+        position: absolute;
+        opacity: 0;
+        color: #727f8c;
+        width: 510px;
+        left: -420px;
+        top: 230px;
+        font-size: 16px;
+        line-height: 1.9;
+    }
+}
+
+.section3 {
+    width: 1600px;
+    height: 850px;
+    position: relative;
+    background: url(../images/section3.jpg) no-repeat;
+    .s3-1 {
+        width: 1228px;
+        height: 372px;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        opacity: 0;
+    }
+    .s3-2 {
+        width: 1019px;
+        height: 248px;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        opacity: 0;
+    }
+    .s3-3 {
+        width: 1156px;
+        height: 449px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        margin: auto;
+        opacity: 0;
+    }
+    .skin {
+        color: #a0b4cb;
+        font-size: 24px;
+        position: absolute;
+        top: 145px;
+        left: 420px;
+    }
+    .s3-title {
+        position: absolute;
+        width: 512px;
+        height: 0px;
+        left: 420px;
+        top: 190px;
+    }
+    .desc {
+        position: absolute;
+        color: #798fa6;
+        width: 0;
+        opacity: 0;
+        left: 420px;
+        top: 245px;
+        font-size: 16px;
+        line-height: 1.9;
+    }
+}
+
+.section4 {
+    width: 1600px;
+    height: 850px;
+    position: relative;
+    background: url(../images/section4.jpg) no-repeat;
+    .s4-title {
+        width: 511px;
+        height: 0px;
+        position: absolute;
+        left: 420px;
+        top: 195px;
+    }
+    .energy {
+        font-size: 24px;
+        color: #748a9e;
+        position: absolute;
+        top: 125px;
+        left: 420px;
+        font-weight: 500;
+        >span {
+            color: #748a9e;
+            font-size: 24px;
+            display: inline-block;
+            width: 5px;
+            height: 46px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: 500;
+        }
+    }
+    .s4-1 {
+        position: absolute;
+        width: 162px;
+        height: 182px;
+        left: 250px;
+        top: 350px;
+        opacity: 0;
+    }
+    .s4-2 {
+        position: absolute;
+        width: 172px;
+        height: 178px;
+        left: 600px;
+        top: 350px;
+        opacity: 0;
+    }
+    .s4-3 {
+        position: absolute;
+        width: 169px;
+        height: 179px;
+        left: 600px;
+        top: 350px;
+        opacity: 0;
+    }
+    .s4-4 {
+        position: absolute;
+        width: 162px;
+        height: 173px;
+        right: 500px;
+        top: 350px;
+        opacity: 0;
+    }
+    .desc {
+        opacity: 0;
+        position: absolute;
+        width: 205px;
+        height: 114px;
+        color: #fff;
+        text-align: left;
+        >h1 {
+            font-size: 24px;
+            line-height: normal;
+            margin-bottom: 12px;
+            font-weight: normal;
+        }
+        >p {
+            font-size: 14px;
+            line-height: 1.9;
+        }
+    }
+    .desc-1 {
+        left: 250px;
+        bottom: 0px;
+    }
+    .desc-2 {
+        left: 600px;
+        bottom: 0px;
+    }
+    .desc-3 {
+        left: 550px;
+        bottom: 0px;
+    }
+    .desc-4 {
+        left: 700px;
+        bottom: 0px;
+    }
+}
+
+.section5 {
+    width: 1600px;
+    height: 850px;
+    position: relative;
+    background: url(../images/section5.jpg) no-repeat;
+    .desc {
+    	position: absolute;
+    	right: 180px;
+    	bottom: 130px;
+        color: #eaeff2;
+        width: 420px;
+        
+        line-height: 1.9;
+        >p {
+            margin-bottom: 27px;
+            font-size: 16px;
+        }
+    }
+    .email{
+    	font-size: 24px;
+    	position: absolute;
+    	color: #969ba0;
+    	left: 390px;
+    	top: 90px;
+    }
+    .s5-title{
+    	width: 561px;
+    	height: 44px;
+    	position: absolute;
+    	left: 390px;
+    	top:125px;
+    }
+    .s5-1{
+    	position: absolute;
+    	width: 699px;
+    	height: 201px;
+    	bottom:850px;
+    	left: 45px;
+    	opacity: 0;
+    }
+    .s5-2{
+		width: 651px;
+		height: 231px;
+		position: absolute;
+		left: 115px;
+		bottom: -70px;
+		opacity: 0;
+    }
+    .s5-3{
+		width: 1600px;
+		height: 209px;
+		position: absolute;
+		left: 0px;
+		bottom: -209px;
+		opacity: 0;
+    }
+    .s5-4{
+		width: 182px;
+		height: 206px;
+		position: absolute;
+		left: 465px;
+		bottom: 850px;
+		opacity: 0;
+    }
+}
+
+.section6 {
+    width: 1600px;
+    height: 850px;
+    position: relative;
+    background: url(../images/section6.jpg) no-repeat;
+    .btn{
+    	background-color: #ffb400;
+    	display: block;
+    	width: 254px;
+    	height: 70px;
+    	font-size: 30px;
+    	position: absolute;
+    	bottom: 0px;
+    	left: 545px;
+    	opacity: 0;
+    	color:#fff;
+    	text-align: center;
+    	line-height: 70px;
+    	transition:all 0.5s;
+    	&:hover{
+    		transform:scale(0.8);
+    	}
+    }
+    .s6-title{
+    	position: absolute;
+    	top: 400px;
+    	left: 440px;
+    	width: 465px;
+    	height: 79px;
+    	opacity: 0;
+    }
+    .s6-1{
+    	position: absolute;
+    	width: 555px;
+    	height: 37px;
+    	left: 395px;
+    	top: 500px;
+    	opacity: 0;
+    }
+    .s6-2{
+    	width: 1274px;
+    	height: 548px;
+    	position: absolute;
+    	left: 60px;
+    	bottom: 60px;
+    	animation: ani1 2s linear infinite;
+    	opacity: 1;
+    }
+    @keyframes ani1{
+    	20%{
+    		opacity: 0.2;
+    	}
+		40%{
+			opacity: 0.4;
+		}
+		60%{
+			opacity: 0.6;
+		}
+		80%{
+			opacity: 0.8;
+		}
+		100%{
+			opacity: 1;
+		}
+    }
+}
