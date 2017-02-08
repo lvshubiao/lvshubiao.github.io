@@ -1,0 +1,29 @@
+.bb {
+    position: absolute;
+    width: 8.0rem;
+    height: 7.312rem;
+    left: 0.6rem;
+    top: -1.4rem;
+    -webkit-animation: move2 0.8s infinite;
+            animation: move2 0.8s infinite;
+}
+@-webkit-keyframes move2 {
+    0% {
+        top: 5.0rem;
+        left: 2.3rem
+    }
+    100% {
+        top: 3.5rem;
+        left: 0.5rem
+    }
+}
+@keyframes move2 {
+    0% {
+        top: 5.0rem;
+        left: 2.3rem
+    }
+    100% {
+        top: 3.5rem;
+        left: 0.5rem
+    }
+}
